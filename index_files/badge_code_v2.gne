@@ -1,0 +1,24 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 	 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/42925582@N07/4024989154/"><img src="http://farm3.staticflickr.com/2642/4024989154_30ab264079_t.jpg" alt="A photo on Flickr" title="PA100541" height="75" width="100"></a></td>';
+	
+		 	 	 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/42925582@N07/3973260606/"><img src="http://farm3.staticflickr.com/2549/3973260606_f65ef320f4_t.jpg" alt="A photo on Flickr" title="P9300311" height="75" width="100"></a></td>';
+	
+		 	 	 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/42925582@N07/3977196238/"><img src="http://farm4.staticflickr.com/3484/3977196238_0bc0b15e0d_t.jpg" alt="A photo on Flickr" title="PA030423" height="75" width="100"></a></td>';
+	
+		 	 	 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/42925582@N07/3977284168/"><img src="http://farm3.staticflickr.com/2512/3977284168_1b2fe2407b_t.jpg" alt="A photo on Flickr" title="PA010333" height="75" width="100"></a></td>';
+	
+		 	 	 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/42925582@N07/3977197992/"><img src="http://farm3.staticflickr.com/2646/3977197992_baa5abfa1f_t.jpg" alt="A photo on Flickr" title="PA020361" height="75" width="100"></a></td>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=b5dcdb1016e9e23e05843a0d2a8f9c2d&r=http%3A%2F%2Fpeople.csail.mit.edu%2Flim%2F&fl_ev=0&lang=en&intl=hk" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);
