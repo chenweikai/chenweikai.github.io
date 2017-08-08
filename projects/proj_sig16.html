@@ -1,64 +1,98 @@
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <link href="./proj_sig16_files/style.css" rel="stylesheet" type="text/css">
 
-  <title>Synthesis of Filigrees for Digital Fabrication</title>
-  
-</head>
+<style>
+body {font-family: Palatino Linotype; }
 
-<body>
-	<center>
-      <h1>Synthesis of Filigrees for Digital Fabrication</h1>
-        <div class="author">
-            <a class="author" href="http://i.cs.hku.hk/~wkchen/">Weikai Chen<sup><small>1</small></sup></a>
-            Xiaolong Zhang<sup><small>1</small></sup>
-            <a class="author" href="https://sites.google.com/site/xinshiqing/">Shiqing Xin<sup><small>2</small></sup></a>
-			<a class="author" href="http://xiayang.weebly.com/">Yang Xia<sup><small>3</small></sup></a>
-            <a class="author" href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre<sup><small>4</small></sup></a>
-            <a class="author" href="http://i.cs.hku.hk/~wenping/">Wenping Wang<sup><small>1</small></sup></a>
+.fileSize{
+	margin-top: 3px;
+	font-size: 14px;
+}
+</style>
 
-            <p>
-        <span class="affiliation"><sup><small>1</small></sup>The University of Hong Kong</span>
-        <span class="affiliation"><sup><small>2</small></sup>Ningbo University</span>
-		<span class="affiliation"><sup><small>3</small></sup>Dalian University of Technology</span>
-		<span class="affiliation"><sup><small>4</small></sup>INRIA</span>
-	    <br>
-		<br>
-		ACM Transactions on Graphics (Proceedings of SIGGRAPH 2016)
-		<br>
-        </p></div>
-        <br>
-
-
-<table width="100%">
-  <tbody><tr><td>
-      
-<img src="./proj_sig16_files/teaser_screen.png" width="100%">
-<!--<br>
-<IMG SRC="./fromback.png" WIDTH="1024"/>
--->
 <br>
-Figure 1： With the filigree synthesis technique proposed in this paper applied to input surfaces (b) and (f), the generated models (c-e) generally present more fascinating and aesthetic appearance than the base models. Note that the primitive filigree patterns used for (c-e) are shown in (a), whose backgrounds are respectively painted in blue, orange and green. The input models in (b), (d) and (f) are courtesy of Kevin Xu, Open3DModel and PinShape, respectively.
+<br>
+<br>
 
-	<h2>Abstract</h2>
-<p> 
+<title>Synthesis of Filigrees for Digital Fabrication</title>
+
+</head>
+<body alink="#4c80b2" link="#000064" text="#404040" vlink="#000064">
+
+
+
+<div style="width:800px; margin: 0 auto; text-align: justify;">
+  <div style="text-align: center;">
+    <h1>Synthesis of Filigrees for Digital Fabrication</h1>
+	<h3>ACM Transactions on Graphics (Proceedings of SIGGRAPH 2016)</h3>
+    <center>
+  <table width="800px">
+    <tbody><tr align="center">
+    <td width="20%"><a href="http://chenweikai.github.io/">Weikai Chen</a></td>
+    <td width="15%">Xiaolong Zhang</td>
+    <td width="15%"><a href="https://sites.google.com/site/xinshiqing/">Shiqing Xin</a></td>
+	<td width="15%"><a href="http://xiayang.weebly.com/">Yang Xia</a></td>
+    <td width="20%"><a href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre</a></td>
+    <td width="15"><a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a></td>
+    </tr><tr align="center">
+    <td>HKU</td>
+    <td>HKU</td>
+    <td>Ningbo Univ.</td>
+    <td>DLUT</td>
+	<td>INRIA</td>
+    <td>HKU</td>
+    </tr>
+  </tbody></table>
+    </center>
+
+    
+  <br \="">
+  <br \="">
+    <img src="./proj_sig16_files/teaser_screen.png" width="800" border="0">
+	<br>
+	<div style="width:800px; margin: 0 auto; text-align: justify;">
+Figure 1. With the filigree synthesis technique proposed in this paper applied to input surfaces (b) and (f), the generated models (c-e) generally present more fascinating and aesthetic appearance than the base models. Note that the primitive filigree patterns used for (c-e) are shown in (a), whose backgrounds are respectively painted in blue, orange and green. The input models in (b), (d) and (f) are courtesy of Kevin Xu, Open3DModel and PinShape, respectively.
+</div>
+  </div>
+  
+  
+  <h2>Abstract:</h2> 
 Filigrees are thin patterns found in jewelry, ornaments and lace fabrics. They are often formed of repeated base elements manually composed into larger, delicate patterns. Digital fabrication simplifies the process of turning a virtual model of a filigree into a physical object. However, designing a virtual model of a filigree remains a time consuming and challenging task. The difficulty lies in tightly packing together the base elements while covering a target surface. In addition, the filigree has to be well connected and  sufficiently robust to be fabricated. We propose a novel approach automating this task. Our technique covers a target surface with a set of input base elements, forming a filigree strong enough to be fabricated. We exploit two properties of filigrees to make this possible. First, as filigrees form delicate traceries they are well captured by their skeleton. This affords for a simpler definition of operators such as matching and deformation. Second, instead of seeking for a perfect packing of the base elements we relax the problem by allowing appearance preserving partial overlaps. We optimize a filigree by a stochastic search, further improved by a novel boosting algorithm that records and reuses good configurations discovered during the process.
-</p><p>
-We illustrate our technique on a number of challenging examples reproducing filigrees on large objects, which we manufacture by 3D printing. Our technique affords for several user controls, such as the scale and orientation of the elements.
+
+<br>
+
+<tr>
+	<td>						
+		<h2>The Video</h2> 
+		<center>
+		<iframe width="728" height="410" src="https://www.youtube.com/embed/clzlyXEzoNw" frameborder="0" allowfullscreen></iframe>
+		</center>
+	</td>
+</tr>
+
+<br>
+
+<h2>Download</h2>
+<table>
+<tbody>
+<tr>
+	<td align="left"><a href="\papers\weikai_sig16_filigree_final.pdf" target="_blank"><img src="./images/paper_logo.jpg" width="30" ></a></td>						
+	<td width="60%" align="left"><a href="\papers\weikai_sig16_filigree_final.pdf" target="_blank">Paper</a><br><p class="fileSize">31.1 MB</p></td>
+															
+								
+	<!--<td align="right"><a href="http://dx.doi.org/10.1145/3072959.3073614" target="_blank"><img src="./index_files/externalweb.png" /></a></td>
+	<td><a href="http://dx.doi.org/10.1145/3072959.3073614" target="_blank">External URL</a><br/><br/></td> -->
+</tr>
+</tbody>
+</table>
+<br/>
+Copyright held by Owner/Author 2016. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. The definitive Version of Record was published in ACM TOG and can be accessed through External URL.						
 
 
-</p><h3>Downloads</h3>                                                                                       
-<ul>                                                                                                      
-<li> <a href=".\papers\weikai_sig16_filigree_final.pdf">Paper</a> (official version available at <a href="http://dl.acm.org/citation.cfm?id=2925911">http://dl.acm.org/citation.cfm?id=2925911</a>)</li>
-<li> <a href="https://www.youtube.com/watch?v=clzlyXEzoNw">Video</a> </li>
-</ul> 
+<h2>Bibtex</h2>
 
-<center>
-<iframe width="728" height="410" src="https://www.youtube.com/embed/clzlyXEzoNw" frameborder="0" allowfullscreen></iframe>
-</center>
-
-<h3>Bibtex</h3>
-<pre>@article{chen2016synthesis,
+<pre>
+@article{chen2016synthesis,
   title={Synthesis of filigrees for digital fabrication},
   author={Chen, Weikai and Zhang, Xiaolong and Xin, Shiqing and Xia, Yang and Lefebvre, Sylvain and Wang, Wenping},
   journal={ACM Transactions on Graphics (TOG)},
@@ -70,11 +104,8 @@ We illustrate our technique on a number of challenging examples reproducing fili
 }
 </pre>
 
-</td></tr>
-</tbody></table>
-</center>
+<br>
+<br>
 
-
-
-
+</div>
 </body></html>
