@@ -1,0 +1,5 @@
+AuthName Restricted
+AuthType Basic
+AuthBasicProvider ldap
+AuthLDAPURL ldap://ldap.cs.hku.hk/ou=people,dc=cs,dc=hku,dc=hk?uid?one
+Require valid-user

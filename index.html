@@ -1,486 +1,270 @@
+<!DOCTYPE html>
+<html class="js no-flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr_weikaichen_github_io" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style>
-      /* 95B3D7 */
-      /* B9CDE5 */
-      body { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", KaiTi, Georgia, serif; background: #fff; padding: 0; margin: 0; }
-      /*body { font-family:arial; background: #fff; padding: 0; margin: 0; }*/
-      #content { width:970px; border-style: solid; border-color: #fff; margin: 0 auto; font-size: 19px; background: #fff; padding: 0 10px 0 10px; }
-      #header h1 { margin: 5 0 10 0; }
-      #header { width:860px; margin: 0 auto 20 auto; height: 270px; margin-top: 10px; background-color: #fff; border-radius: 0px; border-style: none; border-width: 1px; }
-      #profile_pic { float: right; padding-right: 80px; padding-top:15px; height: 270px; }
-      #short_bio { font-size: 20px; padding-left: 50px; padding-top: 50px;}
+	<title>Weikai Chen | USC</title>
 
-      .section { width:890px; margin: 5 auto 10 auto; background-color: #fff;  padding: 25px; padding-bottom: 19px; border-radius: 0px; border-color: #000; border-style: none; border-width: 1px; text-align:justify}
-      #footer { display: none; width:860px; margin: 30 auto 50 auto; padding: 10px; background-color: #fff;}
-      #footer p { margin: 0 auto; text-align: center; }
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./files/modernizr-2.5.3.min.js.download"></script>
 
-      h2 { margin: 0px; margin-bottom: 15px; }
+	<script src="./files/jquery.min.js.download"></script>
+	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
-      div#header a:link { color: #44f; text-decoration:none; }
-      div#header a:visited { color: #44f; text-decoration:none; }
-      div#header a:hover { color: black; text-decoration:none; }
+	<script src="./files/spamspan.min.js.download"></script>
+	<script src="./files/prettify.js.download"></script>
 
-      div#main a:link { color: #44f; text-decoration:none; }
-      div#main a:visited { color: #44f; text-decoration:none; }
-      div#main a:hover { color: black; text-decoration:underline; }
-      div#main ul li { margin: 0px 0 15px; } 
-      div#main ul ul li { margin: 5px 0 5px; font-family:serif; }
-	  div#main ul li li{ margin: 5px 0 5px; font-family:Palatino Linotype; }
+	<link rel="stylesheet" href="./files/social_widget.css">
+	<link rel="stylesheet" href="./files/glyphicons.css">
+	<link rel="stylesheet" href="./files/bootstrap.css">
+	<link rel="stylesheet" href="./files/bootstrap-responsive.css">
+	<link rel="stylesheet" href="./files/app.css">
+	<script type="text/javascript" src="./files/plugins.js.download"></script>
+	<script type="text/javascript" src="./files/main.js.download"></script>
+	<link rel="canonical" href="http://chenweikai.github.io/">
 
-      div#footer a:link { color: #44f; text-decoration:none; }
-      div#footer a:visited { color: #44f; text-decoration:none; }
-      div#footer a:hover { color: black; text-decoration:underline; }
+	<!-- to toggle text -->
+	<style type="text/css">
+		a.toggle_text_link {
+			cursor:pointer;
+		}
 
-      div.paper { clear: both; margin: 0; margin-bottom: 10px; height: 160px; padding: 10px; border: none #666666; font-size: 19px; }
-      div.paper img { float: left; width: 180px; height: 150px; }
-      div.paper div { padding-left: 200px; }
-      .paper_title { font-size: 18px; margin: 0 0 6 0; }
-      .authors { font-size: 17px; margin: 0 0 6 0; }
-	  .paper_journal {font-size: 18px; margin: 0 0 6 0; color="blue"}
-    </style>
-
-    
-    <meta name="description" content="Your description goes here">
-    <meta name="keywords" content="your,keywords,goes,here">
-    <meta name="author" content="Your Name">
-    <title>Weikai Chen's Homepage | USC</title>
-
-
-    <script type="text/javascript" async="" src="./index_files/ga.js"></script><script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-8316064-3']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    
+		pre.invisible_text {
+			display: none;
+		}
+	</style>
+	<script language="javascript" type="text/javascript">
+		function toggle(element) {
+			if(element.style.display=="block") {
+				element.style.display="none";
+			} else {
+				element.style.display="block";
+			}
+		}
+	</script>
 </head>
 
-<body>
-  <div id="content">
-    <div id="header">
-	<img id="profile_pic" src="./index_files/me_paris.jpg">
-      <div id="short_bio">
-	<h1>Weikai Chen (陈伟凯)</h1>
-	Postdoctoral Researcher <br>
-	<a href="http://gl.ict.usc.edu/"> VGL@USC ICT </a><br>
-	Office: 
-	Room 366, 12015 E Waterfront Dr, Los Angeles, CA <br>
-	E-mail: <a href="mailto:chenwk891@gmail.com">chenwk891 at gmail.com</a><br>
-	[<a href="http://i.cs.hku.hk/~wkchen/">Old Homepage</a>] 
-	<br>
-	
-	<!--<a href="http://i.cs.hku.hku/~wkchen/wkchen_CV.pdf">CV</a> -->
-      </div>
-    </div>
-    
-	<tr><td colspan=3><hr></td></tr> 
-	
-    <div id="main">
-      <div class="section">
-	<h2>About me</h2>
-	    I am a postdoctoral researcher at <a href="http://gl.ict.usc.edu/">VGL@USC ICT</a>, supervised by <a href="http://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html"> Prof. Hao Li</a>. I got my PhD degree from the Department of Computer Science, The University of Hong Kong, under the supervision by <a href="http://i.cs.hku.hk/~wenping/">Professor Wenping Wang</a>. I have broad interests in geometric modeling, pattern/texture synthesis, computational fabrication, 3D object/human reconstruction and the interaction between deep learning and computer graphics. My recent research focuses on intelligent algorithms to digitize humans.
-	  <br><br>
-	  Previously, I received both my Bachelor and Master degree in Electronic Engineering from <a href="http://www.tju.edu.cn/english/">Tianjin University</a>, in 2010 and 2013 respectively, where my research was wireless communications.
-	  
-	  <br><br>
-      </div>
+<body class="home page page-id-4 page-template-default top-navbar" data-gr-c-s-loaded="true">
+  <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
 
-	<tr><td colspan=3><hr></td></tr> 
-	
-      <div class="section">
-	<h2>Recent News</h2>
-	<ul>
-	<!-- 
-	  <li>
-	    (Feburary 2017)
-	    Our work <a href="http://i.cs.hku.hk/~wkchen/">By Example Synthesis of Three-Dimensional Porous Materials </a> is accepted by GMP 2017!
-	    
-	  </li>
-	  -->
-	   <li>
-	    (July 2018)
-	  	<font color="red"><b>I have two papers accepted to ECCV 2018!</b></font>
-	  </li>
-	  <li>
-	    (July 2018)
-	  	<font color="red"><b>I have one paper accepted to BMVC 2018!</b></font>
-	  </li>
-	  <li>
-	    (April 2018)
-	  	<font color="red"><b>I will serve on the International Program Committee of Pacific Graphics 2018!</b></font>
-	   </li>
-	  <li>
-	    (April 2018)
-	    I have one paper accepted to SIGGRAPH 2018!
-	  </li>
-	  <li>
-	    (March 2018)
-	    I have one paper accepted to CVPR 2018 (Spotlight Presentation)!
-	    
-	  </li>
-	  <li>
-	    (July 2017)
-	    I have two papers accepted to SIGGRAPH Asia 2017!
-	    
-	  </li>
-	  <li>
-	    (June 2017)
-	    I move to <a href="http://gl.ict.usc.edu/"> VGL@USC ICT </a> as a postdoctoral researcher under supervision by <a href="http://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html"> Prof. Hao Li</a>!
-	    
-	  </li>
-	  <li>
-	    (October 2016)
-	    Our work <a href="http://www.liyiwei.org/papers/texture-siga16/">Tensor Field Design in Volumes </a> is accepted to SIGGRAPH Asia 2016 Technical Briefs!
-	    
-	  </li>
-	  <li>
-	    (July 2016)
-	    I gave a talk titled "Synthesis of Filigrees for Digital Fabrication" in <a href="http://alice.loria.fr/">ALICE/INRIA Nancy</a>.
-	    
-	  </li>
-	  <li>
-	    (June - July 2016)
-	    I am visiting <a href="http://www.antexel.com/sylefeb/research">Dr. Sylvain Lefebvre</a>  in <a href="http://alice.loria.fr/">ALICE/INRIA Nancy</a>.
-	    
-	  </li>
-	  <li>
-	    (April 2016)
-	    My first graphics paper <a href="./projects/proj_sig16.html">Synthesis of Filigrees for Digital Fabrication</a> is accepted to SIGGRAPH 2016!
-	    
-	  </li>
-	</ul>
-      </div>
-	  
-      <tr><td colspan=3><hr></td></tr> 
-	  
-      <div class="section">
-	<h2>Publications</h2>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/eccv18/body.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Deep Volumetric Video From Very Sparse Multi-View Performance Capture</b><br>
-	    </p>
-	    <p class="authors">
-	    Zeng Huang, Tianye Li, <b>Weikai Chen</b>, Yajie Zhao, Jun Xing, Chloe LeGendre, Linjie Luo, Chongyang Ma, Hao Li</a>.<br>
-	    </p>	    
-	    <i>accepted to ECCV 2018</i> 
-		<br>
-		[coming soon]
+    <header id="banner" class="navbar navbar-fixed-top" role="banner">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<!---<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				-->
+				</a>
+				<a class="brand" href="http://chenweikai.github.io/">
+					Weikai Chen 
+				</a>
+				<nav id="nav-main" class="nav-collapse" role="navigation">
+					<ul class="nav">
+						<li class="menu-home active active"><a href="http://chenweikai.github.io/">Home</a></li>
+						<li class="menu-publications"><a href="./publication.html">Publications</a></li>
+						<!---<li class="menu-cv"><a href="http://herohuyongtao.github.io/cv/">CV</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/eccv18/singleviewhair.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Single-View Hair Reconstruction using Convolutional Neural Networks</b><br>
-	    </p>
-	    <p class="authors">
-	    Yi Zhou, Liwen Hu, Jun Xing, <b>Weikai Chen</b>, Han-Wei Kung, Xin Tong, Hao Li</a>.<br>
-	    </p>	    
-	    <i>accepted to ECCV 2018</i> 
-		<br>
-		[<a href="https://arxiv.org/abs/1806.07467">paper</a>][<a href="https://www.youtube.com/watch?v=MLnS-gTWc9w">video</a>]
-		[<a href="https://www.technologyreview.com/s/611569/the-best-of-the-physics-arxiv-week-ending-june-30-2018/">MIT Tech Review</a>]
-		[<a href="https://news.developer.nvidia.com/ai-can-render-hair-in-3d-in-real-time/">Nvidia Review</a>]
+	<div id="wrap" class="container" role="document">
+	<div id="content" class="row">
+			<div id="main" class="span8" role="main">
+				<div class="page-header">
+					<h1>Weikai Chen (陈伟凯)</h1>
+				</div>
+				
+				<p>
+					<img class=" wp-image-697 alignleft dropshadow" style="margin: 0 1.5em 1em 0; border: 1px solid #222;" src="./files/me_paris.jpg" alt="Portrait photo of Weikai Chen" width="180" height="240">
 
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/bmvc18/impainting_.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Identity Preserving Face Completion for Large Ocular Region Occlusion</b><br>
-	    </p>
-	    <p class="authors">
-	    Yajie Zhao, <b>Weikai Chen</b>, Jun Xing, Ruigang Yang</a>.<br>
-	    </p>	    
-	    <i>accepted to <font color="blue">BMVC 2018</font></i> 
-		<br>
-		[coming soon]
+					I am a postdoctoral researcher at <a href="http://gl.ict.usc.edu/">VGL@USC ICT</a>, supervised by <a href="http://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html"> Prof. Hao Li</a>. I got my PhD degree from the Department of Computer Science, The University of Hong Kong, under the supervision by <a href="http://i.cs.hku.hk/~wenping/">Professor Wenping Wang</a>. During my Ph.D., I also had a wonderful time visiting <a href="http://www.antexel.com/sylefeb/research"> Dr. Sylvain Lefebvre</a> at <a href="https://www.inria.fr/en/centre/nancy"> Inria, Nancy</a>. Prior to that, I received both my Bachelor and Master degree in Electronic Engineering from <a href="http://www.tju.edu.cn/english/">Tianjin University</a>.  
+					<!--- have broad interests in geometric modeling, pattern/texture synthesis, computational fabrication, 3D object/human reconstruction and the interaction between deep learning and computer graphics. My recent research focuses on intelligent algorithms to digitize humans. -->
 
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
+					<br>
+					<br>
+					My research lies in the interplay among computer graphics, computer vision and machine learning. In particular, I am interested in 3D modeling and reconstruction of face/hair/body, image-based 3D content creation, 3D deep learning, and geometric modeling.					
 
-	<div class="paper">
-	  <img src="./projects/sig18/teaser.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>High-Fidelity Facial Reflectance and Geometry Inference From an Unconstrained Image</b><br>
-	    </p>
-	    <p class="authors">
-	      Shugo Yamaguchi*, Shunsuke Saito*, Koki Nagano, Yajie Zhao, <b>Weikai Chen</b>, Shigeo Morishima, Hao Li</a>.<br>
-	    </p>	    
-	    <i><b>ACM Transactions on Graphics (Proceedings of <font color="blue">SIGGRAPH 2018</font>) </b> </i> 
-		<br>
-		[<a href="./projects/sig18/siggraph2018HFFRGIFUI.pdf">Paper</a>][<a href="https://www.youtube.com/watch?v=khNWYKfZwjQ">Video</a>]
-		[<a href="http://www.hao-li.com/publications/additionalMaterials/siggraph2018additionalMaterials.pdf">Suppl.</a>]
+					<br>
+					
+				
+				<div class="alignbottom visible-desktop">
+					<p>
+						<a href="http://www.tju.edu.cn/english/">
+							<img class="size-medium wp-image-712" style="margin-bottom: 20px;" src="./files/tju.png" alt="Xim" width="60" />
+						</a>
+								
+						<a href="http://www.hku.hk/">
+							<img class="size-medium wp-image-712" style="margin-bottom: 20px;" src="./files/hku2.png" alt="The University of Hong Kong" width="160" />
+						</a>
+				
+						<a href="https://www.inria.fr/en/">
+							<img class="size-medium wp-image-712" style="margin-bottom: 20px;" src="./files/inria.png" alt="Inria" width="140" />
+						</a>
 
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
+						<a href="http://ict.usc.edu/">
+							<img class="size-medium wp-image-712" style="margin-bottom: 20px;" src="./files/uscict.jpg" alt="USC ICT" width="150" />
+						</a>
+				
+					</p>
+				</div>
+				<!---
+				</p>
+				<p>
+					</p><h3><i>Research Interests</i></h3>
+					<table border="0" cellpadding="0" style="border:0pt;margin-left:8%">
+						<tbody>
+							<tr>
+								<td style="border:0pt">
+									<p align="center" style="text-align:center">
+										<b>&nbsp;&nbsp;&nbsp;&nbsp;Computer Vision</b>
+									</p>
+								</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td style="border:0pt">
+									<p align="center" style="text-align:center">
+										<b>&nbsp;&nbsp;&nbsp;&nbsp;Computer Graphics</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="border:0pt">
+									<ul>
+										<li style="text-align:left">Human Digitization</li>
+										<li style="text-align:left">Image-based Reconstruction</li>
+										<li style="text-align:left">Deep Learning</li>
+									</ul>
+								</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td style="border:0pt">
+									<ul>
+										<li style="text-align:left">Texture/Pattern Synthesis</li>
+										<li style="text-align:left">Geometric Modeling</li>
+										<li style="text-align:left">Computational Fabrication</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				<p></p>
+				-->
+				<hr style="clear: both;">
+				<h3>News</h3>
+				<ul>
+					<li>
+						<p>
+							<strong>07/2018</strong>: I have two papers accepted to ECCV 2018!</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>07/2018</strong>: I have one paper accepted to BMVC 2018!
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>04/2018</strong>: I will serve on the International Program Committee of Pacific Graphics 2018!</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>04/2018</strong>: I have one paper accepted to SIGGRAPH 2018!
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>03/2018</strong>: I have one paper accepted to CVPR 2018 (Spotlight Presentation)! </a>.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>07/2017</strong>: I have two papers accepted to SIGGRAPH Asia 2017! </a>.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>06/2017</strong>: I move to <a href="http://gl.ict.usc.edu/"> VGL@USC ICT </a> as a postdoctoral researcher under supervision by <a href="http://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html"> Prof. Hao Li </a>.
+						</p>
+					</li>
+				</ul>
+			</div><!-- /#main -->
 
-	<div class="paper">
-	  <img src="./projects/cvpr18/mesoscopic.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Mesoscopic Facial Geometry inference Using Deep Neural Networks</b><br>
-	    </p>
-	    <p class="authors">
-	      Loc  Huynh, <b>Weikai Chen</b>, Shunsuke Saito, Jun Xing, Koki Nagano, Andrew Jones, Hao Li, Paul Debevec</a>.<br>
-	    </p>	    
-	    <i><b><font color="blue">CVPR 2018 (Spotlight Presentation)</font></b></i> 
-		<br>
-		[<a href="./projects/cvpr18/Mesoscopic_Facial_Geometry.pdf">Paper</a>]
+			<aside id="sidebar" class="span4" role="complementary">
+				<div class="well">
+					<section id="text-2" class="widget-1 widget-first widget widget_text">
+						<div class="widget-inner">
+							<h3>Contact info</h3>
+							<div class="textwidget"><h6>Email</h6>
+								<a class="email" href="mailto:chenwk891@gmail.com">chenwk891@gmail.com</a>
+								<h6>Address</h6>
+								<i>
+									12015 Waterfront Drive, Los Angeles, <br>
+									CA, U.S.A
+								</i>
+							</div>							
+						</div>
+					</section>
+					<br>
+					<section id="text-2" class="widget-1 widget-first widget widget_text">
+						<div class="widget-inner">
+							<h3> <a href="./files/WeikaiChen_CV.pdf"> Curriculum Vitae </a></h3>
+						</div>
+					</section>
+					<br>
+					<section id="social-widget-2" class="widget-3 widget Social_Widget">
+						<div class="widget-inner">
+							<h3>Follow me</h3>
+							<div class="socialmedia-buttons smw_left">
+								<a href="https://github.com/chenweikai" rel="nofollow" target="_blank">
+									<img width="32" height="32" src="./files/github.png" alt="Follow me on GitHub" title="Follow me on GitHub" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade">
+								</a>					
+								<a href="https://www.linkedin.com/in/weikai-chen-94169779/" rel="nofollow" target="_blank">
+									<img width="32" height="32" src="./files/linkedin.png" alt="Follow me on LinkedIn" title="Follow me on LinkedIn " style="opacity: 0.8; -moz-opacity: 0.8;" class="fade">
+								</a>
+								<a href="https://plus.google.com/u/0/114433784724903420617" rel="publisher" target="_blank">
+									<img width="32" height="32" src="./files/google+.png" alt="Follow me on Google+" title="Follow me on Google+" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade">
+								</a>
+								<a href="https://www.facebook.com/chen.weikai.3" rel="nofollow" target="_blank">
+									<img width="32" height="32" src="./files/facebook.png" alt="Follow me on Facebook" title="Follow me on Facebook" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade">
+								</a>
 
-	  </div>
-	</div>
+								<!-- site credits -->
+								<br><br>
+								<em class="icon-hand-right"></em> <a class="toggle_text_link" onclick="javascript:toggle(site_credits);">Site Credits</a>
+								<pre id="site_credits" class="invisible_text">This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. <br><br>The style of this site is inspired by <a href="http://herohuyongtao.github.io/publications/">Yongtao Hu</a>'s personal website.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
 	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/siga17/decor.jpg">
-	  <div>
-	    <p class="paper_title">
-	      <b>Fabricable Tile Decors</b><br>
-	    </p>
-	    <p class="authors">
-	      <b>Weikai Chen</b>, Yuexin Ma, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang</a>.<br>
-	    </p>	    
-	    <i><b>ACM Transactions on Graphics (Proceedings of <font color="blue">SIGGRAPH Asia 2017</font>)</b></i>
-		<br>
-		[<a href="./projects/proj_siga17.html">Project Page</a>][<a href=".\projects\papers\weikai_siga17_tile.pdf">Paper</a>]
-	  </div>
-	</div>
-	 
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/siga17_tensor/tensor.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Tensor Field Design in Volumes</b><br>
-	    </p>
-	    <p class="authors">
-	      Jonathan Palacios, Lawrence Roy, Prashant Kumar, Chen-Yuan Hsu, <b>Weikai Chen</b>, Chongyang Ma, Li-Yi Wei, Eugene Zhang</a>.<br>
-	    </p>	    
-	    <i><b>ACM Transactions on Graphics (Proceedings of <font color="blue">SIGGRAPH Asia 2017</font>)</b></i> 
-		<br>
-		[<a href="http://www.chongyangma.com/publications/tf/index.html">Project Page</a>]
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/gmp17/porous.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>By Example Synthesis of Three-Dimensional Porous Materials</b><br>
-	    </p>
-	    <p class="authors">
-	      Hui Zhang, <b>Weikai Chen</b>, Bin Wang and Wenping Wang</a>.<br>
-	    </p>	    
-	    <i><b>Computer Aided Geometric Design <font color="blue">(GMP 2017)</font></b></i> 
-		[<a href="http://www.sciencedirect.com/science/article/pii/S0167839617300134">Paper</a>] 
-	  </div>
-	</div>
-	
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./projects/siga16_tensor/leaf_Torus_maj.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Tensor Field Design in Volumes</b><br>
-	    </p>
-	    <p class="authors">
-	      Jonathan Palacios, Chongyang Ma, <b>Weikai Chen</b>, Li-Yi Wei and Eugene Zhang</a>.<br>
-	    </p>	    
-	    <i><b><font color="blue">SIGGRAPH Asia 2016 </font>Technical Briefs</b></i> 
-		[<a href="http://www.liyiwei.org/papers/texture-siga16/">Project Page</a>] 
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-  	<div class="paper">
-	  <img src="./index_files/chen_sig16.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Synthesis of Filigrees for Digital Fabrication</b><br>
-	    </p>
-	    <p class="authors">
-	      <b>Weikai Chen</b>, Xiaolong Zhang, <a href="https://sites.google.com/site/xinshiqing/">Shiqing Xin</a>, <a href="http://xiayang.weebly.com/">Yang Xia </a>, <a href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre</a> and <a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>.<br>
-	    </p>	    
-	    <i><b>ACM Transactions on Graphics (Proceedings of <font color="blue">SIGGRAPH 2016</font>)</b></i> 
-		<br>
-		[<a href="./projects/proj_sig16.html">Project Page</a>][<a href="https://www.youtube.com/watch?v=cVZzkSaxKmY">Two Minute Paper</a>]
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./index_files/signal.png">
-	  <div>
-	    <p class="paper_title">
-	      <b>Second-order differential based matching pursuit method for compressive sensing signal recovery</b><br>
-	    </p>
-	    <p class="authors">
-	      <b>Weikai Chen</b>, Yunhui Chen
-	    </p>	    
-	    <i><b>International Conference on Wireless Communications & Signal Processing (<font color="blue">WCSP 2012</font>)</b></i> 
-		[<a href="http://ieeexplore.ieee.org/document/6542991/">Paper</a>]
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-	<div class="paper">
-	  <img src="./index_files/snr.png">
-	  <div>
-	    <p class="paper_title">
-	      <b> A Compressive Sensing Method for Estimating Doubly-Selective Sparse Channels in OFDM Systems</b><br>
-	    </p>
-	    <p class="authors">
-	      Kaihua Liu, <b>Weikai Chen (corresponding author)</b>, Yongtao Ma
-	    </p>	    
-	    <i><b>Journal of Tianjin University</b>, 2012</i> 
-		[<a href="http://i.cs.hku.hk/~wkchen/">Paper</a>]
-	  </div>
-	</div>
-	
-	<tr><td colspan=3><hr></td></tr> 
-	
-      </div>
-	  
+							</div>
+						</div>
+					</section>
+				</div>
+			</aside><!-- /#sidebar -->
+		</div><!-- /#content -->
+	</div><!-- /#wrap -->
 
-      <!--
-      <div class="section">
-	<h2>Collaborators</h2>
-	
-	<ul>
-      </div>
-      -->
-	  
-	  <tr><td colspan=3><hr></td></tr> 
-	
-      <div class="section">
-	<h2>Professional Activities</h2>
-	<ul>
-	  <li>
-	  	Program Committee:
-	  	<ul>
-	  	<li>Pacific Graphics (2018)</li> 
-	  	</ul>
-	  </li>
-	  <li>
-	    Reviewer: 
-		<ul>
-		<li>ACM SIGGRAPH Asia (2017)</li> 
-		<li>IEEE Transactions on Visualization and Computer Graphics</li> 
-		<li>International Conference on 3D Vision (2018)</li>
-		<li>Pacific Graphics (2015, 2018)</li> 
-		<li>3D Reconstruction in the Wild 2018 (ECCV2018 Workshop)</li>
-		<li>The Visual Computer Journal</li>
-		<li>Graphical Models</li>
-		<li>IEEE Signal Processing Letters</li>
-		</ul>
-	  </li>	
-	  <li>
-	   Teaching Assistant (2014-2016). COMP7507: Visualization and visual analytics
-	  </li>
-	  <li>
-	   Teaching Assistant (2013-2014). CS1117A: Computer Programming
-	  </li>	  	    
-	</ul>
-      </div>
-	  
-	  <tr><td colspan=3><hr></td></tr> 
-	  
-	  <div class="section">
-	<h2>Selected Awards</h2>
-	<ul>
-	 <li>
-	    HKU Postgraduate Scholarship 2013-2017
-	  </li>
-	  <li>
-	    2015 Champion of Presentation in Joint-Hall Academic Symposium (Morrison VS St. John's College)
-	  </li>
-	  <li>
-	    2014 Champion of Presentation in 4th Morrison Hall Academic Symposium
-	  </li>
-	  <li>
-	    2012 National Scholarship by Ministry of Education (Top 1%)
-	  </li>
-	   <li>
-	    2010-2013 First-Class Postgraduate Scholarship (Top 5%)
-	  </li>
-	  <li>
-	    2008 Huawei Scholarship (Top 3%)
-	  </li>
-	  <li>
-	    2006-2010 Outstanding Student of Tianjin University 
-	  </li>
-	  </li>
-	</ul>
-      </div>
-	  <tr><td colspan=3><hr></td></tr> 
-    </div>
-	
-	<div class="section">
-	<h2>Hobby</h2>
-	    I am a badminton lover! I served as the head of <a href="http://www.pgsa.hku.hk/clubs/badminton">HKU PGSA Badminton Club</a>. 	  
-	  <br><br>
-      </div>
-	  
-	  <tr><td colspan=3><hr></td></tr> 
-    
-    <div id="footer">      
-      <p>
-      <!-- Start of StatCounter Code -->
-      <script type="text/javascript">
-    	var sc_project=4120642; 
-	var sc_invisible=0; 
-	var sc_partition=49; 
-	var sc_click_stat=1; 
-	var sc_security="c738355d"; 
-      </script>
-      
-      <script type="text/javascript" src="./index_files/counter.js"></script><span class="statcounter"><a class="statcounter" href="http://www.statcounter.com/" target="_blank"><img src="./index_files/t.php" alt="StatCounter - Free Web Tracker and Counter" border="0"></a></span>
-<noscript>&lt;div class="statcounter"&gt;&lt;a title="web counter" href="http://www.statcounter.com/" target="_blank"&gt;&lt;img class="statcounter" src="http://c.statcounter.com/4120642/0/c738355d/0/" alt="web counter" &gt;&lt;/a&gt;&lt;/div&gt;</noscript>
-      <!-- End of StatCounter Code -->
-      </p>
-      <p>
-	<span>© 2013 <a href="http://http://i.cs.hku.hk/~wkchen/">Weikai Chen</a></span><br>
-	<img src="./index_files/nametag.PNG"><br>	
-	
-    </div>
-    
-</div>
-  
-  
+	<footer id="content-info" class="container" role="contentinfo">
+		<table width="100%">
+			<tbody><tr>
+				<td>
+					<p class="copy"><small>© 2018 Weikai Chen</small></p>
+				</td>
+				<td style="text-align:right">
+					<a href="http://sitestates.com/" title="Site access statistics">
+						<img src="./files/29517.jpg" border="0">
+					</a>
+				</td>
+			</tr>
+		</tbody></table>
+	</footer>
+
+	<!-- From http://stackoverflow.com/a/11668413/72470 -->
+	<script>
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()
+		})
+	  }(window.jQuery)
+	</script>
 
 
-</body></html>
+<div id="cntvlive2-is-installed"></div></body></html>
