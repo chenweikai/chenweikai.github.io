@@ -247,7 +247,36 @@
 				<hr style="clear: both;">
 				<h2>Selected Publications (<a href="http://chenweikai.github.io/publication.html">Full List</a>)</h2>
 				<dl>
-					
+				
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/diffImpField.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Learning to Infer Implicit Surfaces without 3D Supervision</strong>
+						</a>
+						<br>
+						Shichen Liu, Shunsuke Saito, Weikai Chen, Hao Li
+						<br>
+						<em> <b>NeurIPS 2019 </b></em>
+						<br>
+						<em>"the first differentiable renderer for implicit field"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(diffImpField);">abstract</a>
+								<pre id="diffImpField" class="invisible_text">Recent advances in 3D deep learning have shown that it is possible to train highly effective deep models for 3D shape generation, directly from 2D images. This is particularly interesting since the availability of 3D models is still limited compared to the massive amount of accessible 2D images, which is invaluable for training. The representation of 3D surfaces itself is a key factor for the quality and resolution of the 3D output. While explicit representations, such as point clouds and voxels, can span a wide range of shape variations, their resolutions are often limited. Mesh-based representations are more efficient but are limited by their ability to handle varying topologies. Implicit surfaces, however, can robustly handle complex shapes, topologies, and also provide flexible resolution control. We address the fundamental problem of learning implicit surfaces for shape inference without the need of 3D supervision. Despite their advantages, it remains nontrivial to (1) formulate a differentiable connection between implicit surfaces and their 2D renderings, which is needed for image-based supervision; and (2) ensure precise geometric properties and control, such as local smoothness. In particular, sampling implicit surfaces densely is also known to be a computationally demanding and very slow operation. To this end, we propose a novel ray-based field probing technique for efficient image-to-field supervision, as well as a general geometric regularizer for implicit surfaces, which provides natural shape priors in unconstrained regions. We demonstrate the effectiveness of our framework on the task of single-view image-based 3D shape digitization and show how we outperform state-of-the-art techniques both quantitatively and qualitatively. </pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="span2" style="margin-bottom: 2em;">
