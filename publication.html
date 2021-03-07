@@ -124,38 +124,6 @@
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
 						<a href="http://chenweikai.github.io/publication.html">
-							<img class="dropshadow pull-right" alt="" src="./figures/3DCaricature.png" width="150" height="115">
-						</a>
-					</div>
-					<div class="span8">
-						<a href="http://chenweikai.github.io/publication.html">
-							<strong>3DCaricShop: A Dataset and A Baseline Method for Single-view 3D Caricature Face Reconstruction</strong>
-						</a>
-						<br>
-						Yuda Qiu, Xiaojie Xu, Linteng Qiu, Yan Pan, Yushuang Wu, Weikai Chen, Xiaoguang Han
-						<br>
-						<em> <b>CVPR 2021</b></em>
-						<br>
-						<em>"a large scale dataset for 3D caricature"</em>
-						<br>
-						<ul class="inline middot">
-							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">project page</a></li>
-							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">paper</a></li>
-							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
-							<li>
-								<em class="fa fa-bars"></em>
-								<a class="toggle_text_link" onclick="javascript:toggle(cariShop);">abstract</a>
-								<pre id="cariShop" class="invisible_text">Caricature is an artistic representation that deliberately exaggerates the distinctive features of a human face to convey humor or sarcasm. However, reconstructing a 3D caricature from a 2D caricature image remains a challenging task, mostly due to the lack of data. We propose to fill this gap by introducing 3DCaricShop, the first large-scale 3D caricature dataset that contains 2000 high-quality diversified 3D caricatures manually crafted by professional artists. 3DCaricShop also provides rich annotations including a paired 2D caricature image, camera parameters, and 3D facial landmarks. To demonstrate the advantage of 3DCaricShop, we present a novel baseline approach for single-view 3D caricature reconstruction. To ensure a faithful reconstruction with plausible face deformations, we propose to connect the good ends of the detail-rich implicit functions and the parametric mesh representations. In particular, we first register a template mesh to the output of the implicit generator and iteratively project the registration result onto a pre-trained PCA space to resolve artifacts and self-intersections. To deal with the large deformation during non-rigid registration, we propose a novel view-collaborative graph convolution network (VC-GCN) to extract key points from the implicit mesh for accurate alignment. Our method is able to generate high-fidelity 3D caricature in a pre-defined mesh topology that is animation-ready. Extensive experiments have been conducted on 3DCaricShop to verify the significance of the database and the effectiveness of the proposed method. We will release 3DCaricShop upon publication.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
-							</li>
-							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="row" style="margin-bottom: 1em;">
-					<div class="span2 offset1">
-						<a href="http://chenweikai.github.io/publication.html">
 							<img class="dropshadow pull-right" alt="" src="./figures/equiPoint.png" width="150" height="115">
 						</a>
 					</div>
@@ -178,6 +146,38 @@
 								<em class="fa fa-bars"></em>
 								<a class="toggle_text_link" onclick="javascript:toggle(equiPoint);">abstract</a>
 								<pre id="equiPoint" class="invisible_text">Features that are equivariant to a larger group of symmetries have been shown to be more discriminative and powerful in recent studies. However, higher-order equivariant features often come with an exponentiallygrowing computational cost. Furthermore, it remains relatively less explored how rotation-equivariant features can be leveraged to tackle 3D shape alignment tasks. While many past approaches have been based on either nonequivariant or invariant descriptors to align 3D shapes, we argue that such tasks may benefit greatly from an equivariant framework. In this paper, we propose an effective and practical SE(3) (3D translation and rotation) equivariant network for point cloud analysis that addresses both problems. First, we present SE(3) separable point convolution, a novel framework that breaks down the 6D convolution into two separable convolutional operators alternatively performed in the 3D Euclidean and SO(3) spaces. This significantly reduces the computational cost without compromising the performance. Second, we introduce an attention layer to effectively harness the expressiveness of the equivariant features. While jointly trained with the network, the attention layer implicitly derives the intrinsic local frame in the feature space and generate attention vectors that can be integrated in different alignment tasks. We evaluate our approach through extensive studies and visual interpretations. The empirical results demonstrate that our proposed model outperforms strong baselines in a variety of benchmarks.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/3DCaricature.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>3DCaricShop: A Dataset and A Baseline Method for Single-view 3D Caricature Face Reconstruction</strong>
+						</a>
+						<br>
+						Yuda Qiu, Xiaojie Xu, Linteng Qiu, Yan Pan, Yushuang Wu, Weikai Chen, Xiaoguang Han
+						<br>
+						<em> <b>CVPR 2021</b></em>
+						<br>
+						<em>"a large scale dataset for 3D caricature"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(cariShop);">abstract</a>
+								<pre id="cariShop" class="invisible_text">Caricature is an artistic representation that deliberately exaggerates the distinctive features of a human face to convey humor or sarcasm. However, reconstructing a 3D caricature from a 2D caricature image remains a challenging task, mostly due to the lack of data. We propose to fill this gap by introducing 3DCaricShop, the first large-scale 3D caricature dataset that contains 2000 high-quality diversified 3D caricatures manually crafted by professional artists. 3DCaricShop also provides rich annotations including a paired 2D caricature image, camera parameters, and 3D facial landmarks. To demonstrate the advantage of 3DCaricShop, we present a novel baseline approach for single-view 3D caricature reconstruction. To ensure a faithful reconstruction with plausible face deformations, we propose to connect the good ends of the detail-rich implicit functions and the parametric mesh representations. In particular, we first register a template mesh to the output of the implicit generator and iteratively project the registration result onto a pre-trained PCA space to resolve artifacts and self-intersections. To deal with the large deformation during non-rigid registration, we propose a novel view-collaborative graph convolution network (VC-GCN) to extract key points from the implicit mesh for accurate alignment. Our method is able to generate high-fidelity 3D caricature in a pre-defined mesh topology that is animation-ready. Extensive experiments have been conducted on 3DCaricShop to verify the significance of the database and the effectiveness of the proposed method. We will release 3DCaricShop upon publication.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
 							</li>
 							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
 						</ul>
