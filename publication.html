@@ -92,6 +92,285 @@
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
 						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/nips21_octfield.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>OctField: Hierarchical Implicit Functions for 3D Modeling</strong>
+						</a>
+						<br>
+						Jia-Heng Tang*, Weikai Chen*, Jie Yang, Bo Wang, Songrun Liu, Bo Yang, Lin Gao
+						<br>
+						<em> <b>NeurIPS 2021</b></em>
+						<br>
+						<em>"a new hierarchical implicit representation with its generative model for high-precision modeling with low cost"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="http://chenweikai.github.io/publication.html">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(octfield);">abstract</a>
+								<pre id="octfield" class="invisible_text">Recent advances in localized implicit functions have enabled neural implicit representation to be scalable to large scenes. However, the regular subdivision of 3D space employed by these approaches fails to take into account the sparsity of the surface occupancy and the varying granularities of geometric details. As a result, its memory footprint grows cubically with the input volume, leading to a prohibitive computational cost even at a moderately dense decomposition. In this work, we present a learnable hierarchical implicit representation for 3D surfaces, coded OctField, that allows high-precision encoding of intricate surfaces with low memory and computational budget. The key to our approach is an adaptive decomposition of 3D scenes that only distributes local implicit functions around the surface of interest. We achieve this goal by introducing a hierarchical octree structure to adaptively subdivide the 3D space according to the surface occupancy and the richness of part geometry. As octree is discrete and non-differentiable, we further propose a novel hierarchical network that models the subdivision of octree cells as a probabilistic process and recursively encodes and decodes both octree structure and surface geometry in a differentiable manner. We demonstrate the value of OctField for a range of shape modeling and reconstruction tasks, showing superiority over alternative approaches.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/ICCV21_T2T.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Trash to Treasure: Harvesting OOD Data with Cross-Modal Matching for Open-Set Semi-Supervised Learning</strong>
+						</a>
+						<br>
+						Junkai Huang, Chaowei Fang, Weikai Chen, Zhenhua Chai, Xiaolin Wei, Pengxu Wei, Liang Lin, Guanbin Li
+						<br>
+						<em> <b>ICCV 2021</b></em>
+						<br>
+						<em>"a new framework for open-set semi-supervised learning that fully utilizes OOD data"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2108.05617">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(trash2treasure);">abstract</a>
+								<pre id="trash2treasure" class="invisible_text">Open-set semi-supervised learning (open-set SSL) investigates a challenging but practical scenario where out-of-distribution (OOD) samples are contained in the unlabeled data. While the mainstream technique seeks to completely filter out the OOD samples for semi-supervised learning (SSL), we propose a novel training mechanism that could effectively exploit the presence of OOD data for enhanced feature learning while avoiding its adverse impact on the SSL. We achieve this goal by first introducing a warm-up training that leverages all the unlabeled data, including both the in-distribution (ID) and OOD samples. Specifically, we perform a pretext task that enforces our feature extractor to obtain a high-level semantic understanding of the training images, leading to more discriminative features that can benefit the downstream tasks. Since the OOD samples are inevitably detrimental to SSL, we propose a novel cross-modal matching strategy to detect OOD samples. Instead of directly applying binary classification, we train the network to predict whether the data sample is matched to an assigned one-hot class label. The appeal of the proposed cross-modal matching over binary classification is the ability to generate a compatible feature space that aligns with the core classification task. Extensive experiments show that our approach substantially lifts the performance on open-set SSL and outperforms the state-of-the-art by a large margin.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/deep3Dprior.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Deep Optimized Priors for 3D Shape Modeling and Reconstruction</strong>
+						</a>
+						<br>
+						Mingyue Yang, Yuxin Wen, Weikai Chen, Yongwei Chen, Kui Jia
+						<br>
+						<em> <b>CVPR 2021</b></em>
+						<br>
+						<em>"a framework to improve the performance and generality of 3D shape prior"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://nicoleyang61.github.io/Deep-Optimized-Priors/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2012.07241">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(deep3Dprior);">abstract</a>
+								<pre id="deep3Dprior" class="invisible_text">Many learning-based approaches have difficulty scaling to unseen data, as the generality of its learned prior is limited to the scale and variations of the training samples. This holds particularly true with 3D learning tasks, given the sparsity of 3D datasets available. We introduce a new learning framework for 3D modeling and reconstruction that greatly improves the generalization ability of a deep generator. Our approach strives to connect the good ends of both learning-based and optimization-based methods. In particular, unlike the common practice that fixes the pre-trained priors at test time, we propose to further optimize the learned prior and latent code according to the input physical measurements after the training. We show that the proposed strategy effectively breaks the barriers constrained by the pre-trained priors and could lead to high-quality adaptation to unseen data. We realize our framework using the implicit surface representation and validate the efficacy of our approach in a variety of challenging tasks that take highly sparse or collapsed observations as input. Experimental results show that our approach compares favorably with the state-of-the-art methods in terms of both generality and accuracy.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/equiPoint.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Equivariant Point Network for 3D Point Cloud Analysis</strong>
+						</a>
+						<br>
+						Haiwei Chen, Shichen Liu, Weikai Chen, Hao Li
+						<br>
+						<em> <b>CVPR 2021</b></em>
+						<br>
+						<em>"a new approach for extracting SE(3) equivariant feature for point clouds"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="./papers/[CVPR21]Equivariant point cloud.pdf">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(equiPoint);">abstract</a>
+								<pre id="equiPoint" class="invisible_text">Features that are equivariant to a larger group of symmetries have been shown to be more discriminative and powerful in recent studies. However, higher-order equivariant features often come with an exponentiallygrowing computational cost. Furthermore, it remains relatively less explored how rotation-equivariant features can be leveraged to tackle 3D shape alignment tasks. While many past approaches have been based on either nonequivariant or invariant descriptors to align 3D shapes, we argue that such tasks may benefit greatly from an equivariant framework. In this paper, we propose an effective and practical SE(3) (3D translation and rotation) equivariant network for point cloud analysis that addresses both problems. First, we present SE(3) separable point convolution, a novel framework that breaks down the 6D convolution into two separable convolutional operators alternatively performed in the 3D Euclidean and SO(3) spaces. This significantly reduces the computational cost without compromising the performance. Second, we introduce an attention layer to effectively harness the expressiveness of the equivariant features. While jointly trained with the network, the attention layer implicitly derives the intrinsic local frame in the feature space and generate attention vectors that can be integrated in different alignment tasks. We evaluate our approach through extensive studies and visual interpretations. The empirical results demonstrate that our proposed model outperforms strong baselines in a variety of benchmarks.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/3DCaricature.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>3DCaricShop: A Dataset and A Baseline Method for Single-view 3D Caricature Face Reconstruction</strong>
+						</a>
+						<br>
+						Yuda Qiu, Xiaojie Xu, Linteng Qiu, Yan Pan, Yushuang Wu, Weikai Chen, Xiaoguang Han
+						<br>
+						<em> <b>CVPR 2021</b></em>
+						<br>
+						<em>"a large scale dataset for 3D caricature"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://qiuyuda.github.io/3DCaricShop/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2103.08204">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(cariShop);">abstract</a>
+								<pre id="cariShop" class="invisible_text">Caricature is an artistic representation that deliberately exaggerates the distinctive features of a human face to convey humor or sarcasm. However, reconstructing a 3D caricature from a 2D caricature image remains a challenging task, mostly due to the lack of data. We propose to fill this gap by introducing 3DCaricShop, the first large-scale 3D caricature dataset that contains 2000 high-quality diversified 3D caricatures manually crafted by professional artists. 3DCaricShop also provides rich annotations including a paired 2D caricature image, camera parameters, and 3D facial landmarks. To demonstrate the advantage of 3DCaricShop, we present a novel baseline approach for single-view 3D caricature reconstruction. To ensure a faithful reconstruction with plausible face deformations, we propose to connect the good ends of the detail-rich implicit functions and the parametric mesh representations. In particular, we first register a template mesh to the output of the implicit generator and iteratively project the registration result onto a pre-trained PCA space to resolve artifacts and self-intersections. To deal with the large deformation during non-rigid registration, we propose a novel view-collaborative graph convolution network (VC-GCN) to extract key points from the implicit mesh for accurate alignment. Our method is able to generate high-fidelity 3D caricature in a pre-defined mesh topology that is animation-ready. Extensive experiments have been conducted on 3DCaricShop to verify the significance of the database and the effectiveness of the proposed method. We will release 3DCaricShop upon publication.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/cloth.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Deep Fashion3D: A Dataset and Benchmark for 3D Garment Reconstruction from Single Images</strong>
+						</a>
+						<br>
+						Heming Zhu, Yu Cao, Hang Jin, Weikai Chen, Dong Du, Zhangye Wang, Shuguang Cui, and Xiaoguang Han
+						<br>
+						<em> <b>ECCV 2020 (Oral Presentation)</b></em>
+						<br>
+						<em>"a large scale dataset and benchmark for real 3D garments"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://kv2000.github.io/2020/03/25/deepFashion3DRevisited/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/pdf/2003.12753.pdf">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(fashion3d);">abstract</a>
+								<pre id="fashion3d" class="invisible_text">High-fidelity clothing reconstruction is the key to achieving photorealism in a wide range of applications including human digitization, virtual try-on, etc. Recent advances in learning-based approaches have accomplished unprecedented accuracy in recovering unclothed human shape and pose from single images, thanks to the availability of powerful statistical models, e.g. SMPL [38], learned from a large number of body scans. In contrast, modeling and recovering clothed human and 3D garments remains notoriously difficult, mostly due to the lack of large-scale clothing models available for the research community. We propose to fill this gap by introducing Deep Fashion3D, the largest collection to date of 3D garment models, with the goal of establishing a novel benchmark and dataset for the evaluation of image-based garment reconstruction systems. Deep Fashion3D contains 2078 models reconstructed from real garments, which covers 10 different categories and 563 garment instances. It provides rich annotations including 3D feature lines, 3D body pose and the corresponded multi-view real images. In addition, each garment is randomly posed to enhance the variety of real clothing deformations. To demonstrate the advantage of Deep Fashion3D, we propose a novel baseline approach for single-view garment reconstruction, which leverages the merits of both mesh and implicit representations. A novel adaptable template is proposed to enable the learning of all types of clothing in a single network. Extensive experiments have been conducted on the proposed dataset to verify its significance and usefulness. We will make Deep Fashion3D publicly available upon publication</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/softrasPami.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>A General Differentiable Mesh Renderer for Image-based 3D Reasoning</strong>
+						</a>
+						<br>
+						Shichen Liu, Tianye Li, Weikai Chen*, and Hao Li
+						<br>
+						<em> <b>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020</b></em>
+						<br>
+						<em>"an extension of our ICCV'19 paper SoftRas"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="./papers/[TPAMI20]A_General_Differentiable_Mesh_Renderer_for_Image-based_3D_Reasoning.pdf">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(softrasPami);">abstract</a>
+								<pre id="softrasPami" class="invisible_text">Rendering bridges the gap between 2D vision and 3D scenes by simulating the physical process of image formation. By inverting such renderer, one can think of a learning approach to infer 3D information from 2D images. However, standard graphics renderers involve a fundamental step called rasterization, which prevents rendering to be differentiable. Unlike the state-of-the-art differentiable renderers, which only approximate the rendering gradient in the backpropagation, we propose a natually differentiable rendering framework that is able to (1) directly render colorized mesh using differentiable functions and (2) back-propagate efficient supervisions to mesh vertices and their attributes from various forms of image representations. The key to our framework is a novel formulation that views rendering as an aggregation function that fuses the probabilistic contributions of all mesh triangles with respect to the rendered pixels. Such formulation enables our framework to flow gradients to the occluded and distant vertices, which cannot be achieved by the previous state-of-the-arts. We show that by using the proposed renderer, one can achieve significant improvement in 3D unsupervised single-view reconstruction both qualitatively and quantitatively. Experiments also demonstrate that our approach can handle the challenging tasks in image-based shape fitting, which remain nontrivial to existing differentiable renders</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/fh.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Intuitive, Interactive Beard and Hair Synthesis with Generative Models</strong>
+						</a>
+						<br>
+						Kyle Olszewski, Duygu Ceylan, Jun Xing, Jose I. Echevarria, Zhili Chen, Weikai Chen, Hao Li
+						<br>
+						<em> <b>CVPR 2020 (Oral Presentation)</b></em>
+						<br>
+						<em>"deep learning powered interactive facial hair editing system"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/pdf/2004.06848.pdf">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(facialHair);">abstract</a>
+								<pre id="facialHair" class="invisible_text">We present an interactive approach to synthesizing real-istic variations in facial hair in images, ranging from subtleedits to existing hair to the addition of complex and chal-lenging  hair  in  images  of  clean-shaven  subjects.   To  cir-cumvent the tedious and computationally expensive tasks ofmodeling,  rendering and compositing the 3D geometry ofthe target hairstyle using the traditional graphics pipeline,we employ a neural network pipeline that synthesizes real-istic and detailed images of facial hair directly in the tar-get image in under one second.  The synthesis is controlledby simple and sparse guide strokes from the user definingthe  general  structural  and  color  properties  of  the  targethairstyle.  We qualitatively and quantitatively evaluate ourchosen method compared to several alternative approaches.We show compelling interactive editing results with a proto-type user interface that allows novice users to progressivelyrefine the generated image to match their desired hairstyle,and demonstrate that our approach also allows for flexibleand high-fidelity scalp hair synthesis. </pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/SCF_porous.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Organic Open-cell Porous Structure Modeling</strong>
+						</a>
+						<br>
+						Lihao Tian, Lin Lu, Weikai Chen, Yang Xia, Charlie C. L. Wang and Wenping Wang
+						<br>
+						<em> <b>ACM Symposium on Computational Fabrication 2020 </b></em>
+						<br>
+						<em>"controllable field-aligned porous structure modeling"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://drive.google.com/file/d/1-HFReadtBi33-NZBrKQ5g_NYaVEWdaP1/view?usp=sharing">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(porous);">abstract</a>
+								<pre id="porous" class="invisible_text">Open-cell porous structures are ubiquitous in nature and have been widely employed in practical applications. Additive manufacturing has enabled the fabrication of shapes with intricate interior structures; however, a computational method for representing and modeling general porous structures in organic shapes is missing in the literature. In this paper, we present a novel method for modeling organic and open-cell porous structures with porosities and pore anisotropies specified by users or stipulated by applications. We represent each pore as a transformed Gaussian kernel whose anisotropy is defined by a tensor field. The porous structure is modeled as a level surface of combined Gaussian kernels. We utilize an anisotropic particle system to distribute the Gaussian kernels concerning the input tensor field. The porous structure is then generated from the particle system by following the anisotropy specified by the input. We employ Morse-Smale complexes to identify the topological structure of the kernels and enforce pore connectivity. The resulting porous structure can be easily controlled using a set of parameters. We demonstrate our method on a set of 3D models whose tensor field is either predesigned or obtained from the mechanical analysis.. </pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
 							<img class="dropshadow pull-right" alt="" src="./figures/diffImpField.png" width="150" height="115">
 						</a>
 					</div>
@@ -502,7 +781,7 @@
 							<strong>Fabricable Tile Decors</strong>
 						</a>
 						<br>
-						Weikai Chen, Yuexin Ma, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang
+						Weikai Chen*, Yuexin Ma*, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang
 						<br>
 						<em><b>SIGGRAPH Asia 2017</b></em>
 						<br>
