@@ -92,6 +92,98 @@
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
 						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/3psdf.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>3PSDF: Three-Pole Signed Distance Function for Learning Surfaces with Arbitrary Topologies</strong>
+						</a>
+						<br>
+						Weikai Chen, Cheng Lin, Weiayng Li, Bo Wang
+						<br>
+						<em> <b>CVPR 2022</b></em>
+						<br>
+						<em>"a new implicit representation that can represent non-watertight shapes"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2205.15572">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/chenweikai/3PSDF">code</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(l3psdf);">abstract</a>
+								<pre id="l3psdf" class="invisible_text">Recent advances in learning 3D shapes using neural implicit functions have achieved impressive results by breaking the previous barrier of resolution and diversity for varying topologies. However, most of such approaches are limited to closed surfaces as they require the space to be divided into inside and outside. More recent works based on unsigned distance function have been proposed to handle complex geometry containing both the open and closed surfaces. Nonetheless, as their direct outputs are point clouds, robustly obtaining high-quality meshing results from discrete points remains an open question. We present a novel learnable implicit representation, called three-pole signed distance function (3PSDF), that can represent non-watertight 3D shapes with arbitrary topologies while supporting easy field-to-mesh conversion using the classic Marching Cubes algorithm. The key to our method is the introduction of a new sign, the NULL sign, in addition to the conventional in and out labels. The existence of the null sign could stop the formation of a closed isosurface derived from the bisector of the in/out regions. Further, we propose a dedicated learning framework to effectively learn 3PSDF without worrying about the vanishing gradient due to the null labels. Experimental results show that our approach outperforms the previous state-of-the-art methods in a wide range of benchmarks both quantitatively and qualitatively.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/dada.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Dual Adversarial Adaptation for Cross-Device Real-World Image Super-Resolution</strong>
+						</a>
+						<br>
+						Xiaoqian Xu, Pengxu Wei, Weikai Chen, Mingzhi Mao, Liang Lin, Guanbin Li
+						<br>
+						<em> <b>CVPR 2022 (Oral Presentation)</b></em>
+						<br>
+						<em>"the first work studying cross-device domain adaptation for real-world image super-resolution"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2205.03524v1">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/lonelyhope/DADA">code</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(dada);">abstract</a>
+								<pre id="dada" class="invisible_text">Due to the sophisticated imaging process, an identical scene captured by different cameras could exhibit distinct imaging patterns, introducing distinct proficiency among the super-resolution (SR) models trained on images from different devices. In this paper, we investigate a novel and practical task coded cross-device SR, which strives to adapt a real-world SR model trained on the paired images captured by one camera to low-resolution (LR) images captured by arbitrary target devices. The proposed task is highly challenging due to the absence of paired data from various imaging devices. To address this issue, we propose an unsupervised domain adaptation mechanism for real-world SR, named Dual ADversarial Adaptation (DADA), which only requires LR images in the target domain with available real paired data from a source camera. DADA employs the Domain-Invariant Attention (DIA) module to establish the basis of target model training even without HR supervision. Furthermore, the dual framework of DADA facilitates an Inter-domain Adversarial Adaptation (InterAA) in one branch for two LR input images from two domains, and an Intra-domain Adversarial Adaptation (IntraAA) in two branches for an LR input image. InterAA and IntraAA together improve the model transferability from the source domain to the target. We empirically conduct experiments under six Real→Real adaptation settings among three different cameras, and achieve superior performance compared with existing state-of-the-art approaches. We also evaluate the proposed DADA to address the adaptation to the video camera, which presents a promising research topic to promote the wide applications of real-world super-resolution. Our source code is publicly available at https://github.com/lonelyhope/DADA.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/ifpn.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>Exemplar-based Pattern Synthesis with Implicit Periodic Field Network</strong>
+						</a>
+						<br>
+						Haiwei Chen, Jiayi Liu, Weikai Chen, Shichen Liu, Yajie Zhao
+						<br>
+						<em> <b>CVPR 2022</b></em>
+						<br>
+						<em>"a general method for synthesizing 2D images and 3D structures using implicit periodic function"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2204.01671">paper</a></li>
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(IPFN);">abstract</a>
+								<pre id="IPFN" class="invisible_text">Synthesis of ergodic, stationary visual patterns is widely applicable in texturing, shape modeling, and digital content creation. The wide applicability of this technique thus requires the pattern synthesis approaches to be scalable, diverse, and authentic. In this paper, we propose an exemplar-based visual pattern synthesis framework that aims to model the inner statistics of visual patterns and generate new, versatile patterns that meet the aforementioned requirements. To this end, we propose an implicit network based on generative adversarial network (GAN) and periodic encoding, thus calling our network the Implicit Periodic Field Network (IPFN). The design of IPFN ensures scalability: the implicit formulation directly maps the input coordinates to features, which enables synthesis of arbitrary size and is computationally efficient for 3D shape synthesis. Learning with a periodic encoding scheme encourages diversity: the network is constrained to model the inner statistics of the exemplar based on spatial latent codes in a periodic field. Coupled with continuously designed GAN training procedures, IPFN is shown to synthesize tileable patterns with smooth transitions and local variations. Last but not least, thanks to both the adversarial training technique and the encoded Fourier features, IPFN learns high-frequency functions that produce authentic, high-quality results. To validate our approach, we present novel experimental results on various applications in 2D texture synthesis and 3D shape synthesis.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="http://chenweikai.github.io/publication.html">
 							<img class="dropshadow pull-right" alt="" src="./figures/nips21_octfield.png" width="150" height="115">
 						</a>
 					</div>
