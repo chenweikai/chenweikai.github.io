@@ -52,10 +52,59 @@ Recent advances in learning 3D shapes using neural implicit functions have achie
 
 <tr>
 	<td>						
-		<h2>The Video</h2> 
-		<center>
-		<iframe width="728" height="410" src="https://www.youtube.com/embed/clzlyXEzoNw" frameborder="0" allowfullscreen></iframe>
+		<h2>Insight & Method</h2> 
+
+    <h3>Challenge 1: "Curse" of Closeness of Traditional Two-sided Signed Distance Field (SDF)</h3>
+    <center>
+		 <br \="">
+    <img src="./proj_cvpr22_files/closeness_curse.png" width="900" border="0">
+  <br>
+  <div style="width:950px; margin: 0 auto; text-align: justify;">
+Figure 2. (a) Conventional signed distance function represent the surface as the boundary between the positive and negative signs. (b) This leads to the "curse" of closeness, that is, the closed surface will always be generated once there exist both signs in the space (even that there is only one point has an opposite sign as shown above).
+</div>
 		</center>
+    <h3>Solution: Introduce the Third (direction-less) Sign -- the NULL Sign</h3>
+    <center>
+     <br \="">
+    <img src="./proj_cvpr22_files/null_sign.png" width="700" border="0">
+  <br>
+  <div style="width:950px; margin: 0 auto; text-align: justify;">
+
+Figure 3. Left: To convert the traditional SDF into mesh, we using marching cubes algorithm to interpolate the surface position as the the zero-level set between the positive and negative values. Right: We propose to introduce the third pole, the NULL sign, into SDF. The NULL sign is represented by the nan value, which could disable the interpolation process. Hence, no surface could be extracted from a local cell where there exists any nan value at the cell corners. 
+
+</div>
+
+  <div style="width:950px; margin: 10 auto; text-align: justify;">
+
+As shown in Figure 3, 3PSDF can effectively lift the "curse" of closeness by introducing the third direction-less sign -- the NULL sign (represented by the nan value). Hence, by properly distributing the null signs over the space, we can obtain surface of arbitrary topologies, including both the closed and open ones. Typically, an open surface can be formed with 1) a narrow band surrounding the surface of interest that contains both the positive and negative signs and 2) the majority of space that is filled with nan values.
+</div>
+
+
+    <h3>Challenge 2: Definition of Inside/Outside for Open Surface</h3>
+    <center>
+     <br \="">
+    <img src="./proj_cvpr22_files/sign_solution.png" width="900" border="0">
+    <br>
+  <div style="width:950px; margin: 0 auto; text-align: justify;">
+Figure 2. (a) Conventional signed distance function represent the surface as the boundary between the positive and negative signs. (b) This leads to the "curse" of closeness, that is, the closed surface will always be generated once there exist both signs in the space (even that there is only one point has an opposite sign as shown above).
+</div>
+    </center>
+    <h3>Solution: Sign Computation based on Surface Normals</h3>
+    <center>
+     <br \="">
+    <img src="./proj_cvpr22_files/null_sign.png" width="700" border="0">
+  <br>
+  <div style="width:950px; margin: 0 auto; text-align: justify;">
+
+Figure 3. Left: To convert the traditional SDF into mesh, we using marching cubes algorithm to interpolate the surface position as the the zero-level set between the positive and negative values. Right: We propose to introduce the third pole, the NULL sign, into SDF. The NULL sign is represented by the nan value, which could disable the interpolation process. Hence, no surface could be extracted in a local region where any nan value exists. 
+
+</div>
+
+  <div style="width:950px; margin: 10 auto; text-align: justify;">
+
+As shown in Figure 3, 3PSDF can effectively lift the "curse" of closeness by introducing the third direction-less sign -- the NULL sign (represented by the nan value). Hence, by properly distributing the null signs over the space, we can obtain surface of arbitrary topologies, including both the closed and open ones. Typically, an open surface can be formed with 1) a narrow band surrounding the surface of interest that contains both the positive and negative signs and 2) the majority of space that is filled with nan values.
+</div>
+
 	</td>
 </tr>
 
@@ -77,8 +126,7 @@ Recent advances in learning 3D shapes using neural implicit functions have achie
 </tr>
 </tbody>
 </table>
-<br/>
-Copyright held by Owner/Author 2016. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. The definitive Version of Record was published in IEEE CVPR and can be accessed through External URL.						
+				
 
 
 <h2>Bibtex</h2>
