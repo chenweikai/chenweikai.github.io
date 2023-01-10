@@ -332,6 +332,37 @@
 				<div class="row">
 					<div class="span2" style="margin-bottom: 2em;">
 						<a href="http://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/nips22_hsdf.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="http://chenweikai.github.io/publication.html">
+							<strong>HSDF: Hybrid Sign and Distance Field for Modeling Surfaces with Arbitrary Topologies</strong>
+						</a>
+						<br>
+						Li Wang, Jie Yang, Weikai Chen, Xiaoxu Meng, Bo Yang, Jintao Li, Lin Gao
+						<br>
+						<em> <b>NeurIPS 2022</b></em>
+						<br>
+						<em>"a learnable implicit representation for modeling both closed and open surfaces"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://openreview.net/pdf?id=Soadfc-JMeX">paper</a></li>
+							<!-- <li><em class="fa fa-file"></em> <a href="https://openreview.net/pdf?id=Soadfc-JMeX">code</a></li> -->
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(hsdf);">abstract</a>
+								<pre id="hsdf" class="invisible_text">Neural implicit function based on signed distance field (SDF) has achieved impressive progress in reconstructing 3D models with high fidelity. However, such approaches can only represent closed shapes. Recent works based on unsigned distance function (UDF) are proposed to handle both watertight and open surfaces. Nonetheless, as UDF is signless, its direct output is limited to point cloud, which imposes an additional challenge on extracting high-quality meshes from discrete points. To address this issue, we present a new learnable implicit representation, coded HSDF, that connects the good ends of SDF and UDF. In particular, HSDF is able to represent arbitrary topologies containing both closed and open surfaces while being compatible with existing iso-surface extraction techniques for easy field-to-mesh conversion. In addition to predicting a UDF, we propose to learn an additional sign field via a simple classifier. Unlike traditional SDF, HSDF is able to locate the surface of interest before level surface extraction by generating surface points following NDF. We are then able to obtain open surfaces via an adaptive meshing approach that only instantiates regions containing surface into a polygon mesh. We also propose HSDF-Net, a dedicated learning framework that factorizes the learning of HSDF into two easier problems. Experiments on multiple datasets show that HSDF outperforms state-of-the-art techniques both qualitatively and quantitatively.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="http://chenweikai.github.io/publication.html">
 							<img class="dropshadow pull-right" alt="" src="./figures/3psdf.png" width="150" height="115">
 						</a>
 					</div>
