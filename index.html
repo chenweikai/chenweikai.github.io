@@ -167,6 +167,11 @@
 				<ul>
 					<li>
 						<p>
+							<strong>07/2023</strong>: Two papers accepted to ICCV 2023.</strong></a>
+						</p>
+					</li>
+					<li>
+						<p>
 							<strong>02/2023</strong>: <strong>Four papers</strong> accepted to CVPR 2023.</strong></a>
 						</p>
 					</li>
@@ -235,6 +240,8 @@
 							<strong>03/2020</strong>: One paper accepted to CVPR 2020 as <strong>Oral Presentation</strong>.</a>
 						</p>
 					</li>	
+
+					<!---
 					<li>
 						<p>
 							<strong>11/2019</strong>: Gave an invited talk at <a href="https://games-cn.org/">GAMES</a> web seminar. Slides can be found <a href="https://slides.games-cn.org/pdf/Games2019121%E9%99%88%E4%BC%9F%E5%87%AF.pdf">here.</a>
@@ -243,6 +250,11 @@
 					<li>
 						<p>
 							<strong>10/2019</strong>: Our work <font color="#FF0000"><strong><a href="https://github.com/ShichenLiu/SoftRas">SoftRas</a> is officially incorporated into <a href="https://pytorch3d.org/">Pytorch3D</a></strong></font> as the basis of differentiable rendering! Check <a href="https://pytorch3d.org/docs/renderer">this</a> out!</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>07/2019</strong>: Three papers accepted to ICCV 2019! Two of them are selected as <strong>Oral Presentation</strong>.</a>
 						</p>
 					</li>
 					<li>
@@ -260,12 +272,6 @@
 							<strong>07/2019</strong>: Our ICCV'19 paper <a href="https://arxiv.org/pdf/1904.01786.pdf">SoftRas</a> received <strong>three Strong Accepts.</strong></a>
 						</p>
 					</li>
-					<li>
-						<p>
-							<strong>07/2019</strong>: Three papers accepted to ICCV 2019! Two of them are selected as <strong>Oral Presentation</strong>.</a>
-						</p>
-					</li>
-					<!---
 					<li>
 						<p>
 							<strong>06/2019</strong>: One paper accepted to UIST 2019.</a>
@@ -338,6 +344,69 @@
 				<hr style="clear: both;">
 				<h2>Selected Publications (<a href="http://chenweikai.github.io/publication.html">Full List</a>)</h2>
 				<dl>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="http://geometrylearning.com/neudf/">
+							<img class="dropshadow pull-right" alt="" src="./figures/neudf.png" width="150" height="120">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="http://geometrylearning.com/neudf/">
+							<strong>NeUDF: Leaning Neural Unsigned Distance Fields with Volume Rendering</strong>
+						</a>
+						<br>
+						Yu-Tao Liu, Li Wang, Jie Yang, Weikai Chen, Xiaoxu Meng, Bo Yang, Lin Gao
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>"NeuS for unsigned distance field"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="http://geometrylearning.com/neudf/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_NeUDF_Leaning_Neural_Unsigned_Distance_Fields_With_Volume_Rendering_CVPR_2023_paper.pdf">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/IGLICT/NeUDF">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(neudf);">abstract</a>
+								<pre id="neudf" class="invisible_text">Multi-view shape reconstruction has achieved impressive progresses thanks to the latest advances in neural implicit rendering. However, existing methods based on signed distance function (SDF) are limited to closed surfaces, failing to reconstruct a wide range of real-world objects that contain open-surface structures. In this work, we introduce a new neural rendering framework, coded NeUDF, that can reconstruct surfaces with arbitrary topologies solely from multi-view supervision. To gain the flexibility of representing arbitrary surfaces, NeUDF leverages the unsigned distance function (UDF) as surface representation. While a naive extension of SDF-based neural renderer cannot scale to UDF, we propose two new formulations of weight function specially tailored for UDF-based volume rendering. Furthermore, to cope with open surface rendering, where the in/out test is no longer valid, we present a dedicated normal regularization strategy to resolve the surface orientation ambiguity. We extensively evaluate our method over a number of challenging datasets, including two typical open surface datasets MGN and Deep Fashion 3D. Experimental results demonstrate that NeUDF can significantly outperform the state-of-the-art methods in the task of multi-view surface reconstruction, especially for the complex shapes with open boundaries.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">
+							<img class="dropshadow pull-right" alt="" src="./figures/neat.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">
+							<strong>NeAT: Learning Neural Implicit Surfaces with Arbitrary Topologies from Multi-view Images</strong>
+						</a>
+						<br>
+						Xiaoxu Meng, Weikai Chen, Bo Yang
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>""NeuS for 3-Pole signed distance field (3PSDF)"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2303.12012f">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/xmeng525/NeAT">code</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://www.dropbox.com/sh/utn5rnohmr0y2c8/AACdets4PQrP5CB1KwGkpOFUa?dl=0">data</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(neat);">abstract</a>
+								<pre id="neat" class="invisible_text">Recent progress in neural implicit functions has set new state-of-the-art in reconstructing high-fidelity 3D shapes from a collection of images. However, these approaches are limited to closed surfaces as they require the surface to be represented by a signed distance field. In this paper, we propose NeAT, a new neural rendering framework that can learn implicit surfaces with arbitrary topologies from multi-view images. In particular, NeAT represents the 3D surface as a level set of a signed distance function (SDF) with a validity branch for estimating the surface existence probability at the query positions. We also develop a novel neural volume rendering method, which uses SDF and validity to calculate the volume opacity and avoids rendering points with low validity. NeAT supports easy field-to-mesh conversion using the classic Marching Cubes algorithm. Extensive experiments on DTU, MGN, and Deep Fashion 3D datasets indicate that our approach is able to faithfully reconstruct both watertight and non-watertight surfaces. In particular, NeAT significantly outperforms the state-of-the-art methods in the task of open surface reconstruction both quantitatively and qualitatively.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="span2" style="margin-bottom: 2em;">

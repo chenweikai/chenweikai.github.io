@@ -91,6 +91,132 @@
 				--> 
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
+						<a href="http://geometrylearning.com/neudf/">
+							<img class="dropshadow pull-right" alt="" src="./figures/neudf.png" width="150" height="120">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="http://geometrylearning.com/neudf/">
+							<strong>NeUDF: Leaning Neural Unsigned Distance Fields with Volume Rendering</strong>
+						</a>
+						<br>
+						Yu-Tao Liu, Li Wang, Jie Yang, Weikai Chen, Xiaoxu Meng, Bo Yang, Lin Gao
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>"NeuS for unsigned distance field"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="http://geometrylearning.com/neudf/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_NeUDF_Leaning_Neural_Unsigned_Distance_Fields_With_Volume_Rendering_CVPR_2023_paper.pdf">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/IGLICT/NeUDF">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(neudf);">abstract</a>
+								<pre id="neudf" class="invisible_text">Multi-view shape reconstruction has achieved impressive progresses thanks to the latest advances in neural implicit rendering. However, existing methods based on signed distance function (SDF) are limited to closed surfaces, failing to reconstruct a wide range of real-world objects that contain open-surface structures. In this work, we introduce a new neural rendering framework, coded NeUDF, that can reconstruct surfaces with arbitrary topologies solely from multi-view supervision. To gain the flexibility of representing arbitrary surfaces, NeUDF leverages the unsigned distance function (UDF) as surface representation. While a naive extension of SDF-based neural renderer cannot scale to UDF, we propose two new formulations of weight function specially tailored for UDF-based volume rendering. Furthermore, to cope with open surface rendering, where the in/out test is no longer valid, we present a dedicated normal regularization strategy to resolve the surface orientation ambiguity. We extensively evaluate our method over a number of challenging datasets, including two typical open surface datasets MGN and Deep Fashion 3D. Experimental results demonstrate that NeUDF can significantly outperform the state-of-the-art methods in the task of multi-view surface reconstruction, especially for the complex shapes with open boundaries.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">
+							<img class="dropshadow pull-right" alt="" src="./figures/neat.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">
+							<strong>NeAT: Learning Neural Implicit Surfaces with Arbitrary Topologies from Multi-view Images</strong>
+						</a>
+						<br>
+						Xiaoxu Meng, Weikai Chen, Bo Yang
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>""NeuS for 3-Pole signed distance field (3PSDF)"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2303.12012f">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://github.com/xmeng525/NeAT">code</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://www.dropbox.com/sh/utn5rnohmr0y2c8/AACdets4PQrP5CB1KwGkpOFUa?dl=0">data</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(neat);">abstract</a>
+								<pre id="neat" class="invisible_text">Recent progress in neural implicit functions has set new state-of-the-art in reconstructing high-fidelity 3D shapes from a collection of images. However, these approaches are limited to closed surfaces as they require the surface to be represented by a signed distance field. In this paper, we propose NeAT, a new neural rendering framework that can learn implicit surfaces with arbitrary topologies from multi-view images. In particular, NeAT represents the 3D surface as a level set of a signed distance function (SDF) with a validity branch for estimating the surface existence probability at the query positions. We also develop a novel neural volume rendering method, which uses SDF and validity to calculate the volume opacity and avoids rendering points with low validity. NeAT supports easy field-to-mesh conversion using the classic Marching Cubes algorithm. Extensive experiments on DTU, MGN, and Deep Fashion 3D datasets indicate that our approach is able to faithfully reconstruct both watertight and non-watertight surfaces. In particular, NeAT significantly outperforms the state-of-the-art methods in the task of open surface reconstruction both quantitatively and qualitatively.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="https://dongdu3.github.io/projects/2023/NerVE/">
+							<img class="dropshadow pull-right" alt="" src="./figures/nerve.png" width="150" height="90">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://dongdu3.github.io/projects/2023/NerVE/">
+							<strong>NerVE: Neural Volumetric Edges for Parametric Curve Extraction from Point Cloud</strong>
+						</a>
+						<br>
+						Xiangyu Zhu, Dong Du, Weikai Chen, Zhiyou Zhao, Yinyu Nie, Xiaoguang Han
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>"a neural volumetric representation for learning parametric curves"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://dongdu3.github.io/projects/2023/NerVE/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/pdf/2303.16465.pdf">paper</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=tAwC23uybTM">video</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(nerve);">abstract</a>
+								<pre id="nerve" class="invisible_text">Extracting parametric edge curves from point clouds is a fundamental problem in 3D vision and geometry processing. Existing approaches mainly rely on keypoint detection, a challenging procedure that tends to generate noisy output, making the subsequent edge extraction error-prone. To address this issue, we propose to directly detect structured edges to circumvent the limitations of the previous point-wise methods. We achieve this goal by presenting NerVE, a novel neural volumetric edge representation that can be easily learned through a volumetric learning framework. NerVE can be seamlessly converted to a versatile piece-wise linear (PWL) curve representation, enabling a unified strategy for learning all types of free-form curves. Furthermore, as NerVE encodes rich structural information, we show that edge extraction based on NerVE can be reduced to a simple graph search problem. After converting NerVE to the PWL representation, parametric curves can be obtained via off-the-shelf spline fitting algorithms. We evaluate our method on the challenging ABC dataset. We show that a simple network based on NerVE can already outperform the previous state-of-the-art methods by a great margin</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Divide_and_Adapt_Active_Domain_Adaptation_via_Customized_Learning_CVPR_2023_paper.pdf">
+							<img class="dropshadow pull-right" alt="" src="./figures/diana.png" width="150" height="115">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Divide_and_Adapt_Active_Domain_Adaptation_via_Customized_Learning_CVPR_2023_paper.pdf">
+							<strong>Divide and Adapt: Active Domain Adaptation via Customized Learning</strong>
+						</a>
+						<br>
+						Duojun Huang, Jichang Li, Weikai Chen, Junshi Huang, Zhenhua Chai, Guanbin Li
+						<br>
+						<em> <b>CVPR 2023</b></em>
+						<br>
+						<em>"a versatile framework for source-free domain adaptation"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Divide_and_Adapt_Active_Domain_Adaptation_via_Customized_Learning_CVPR_2023_paper.pdf">paper</a></li>
+							<!-- <li><em class="fa fa-file"></em> <a href="https://openreview.net/pdf?id=Soadfc-JMeX">code</a></li> -->
+							<!--<li><em class="fa fa-file"></em> <a href="https://www.youtube.com/watch?v=xjTVECIqZfc&feature=youtu.be">video</a></li> -->
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(diana);">abstract</a>
+								<pre id="diana" class="invisible_text">We investigate a practical domain adaptation task, called source-free domain adaptation (SFUDA), where the source-pretrained model is adapted to the target domain without access to the source data. Existing techniques mainly leverage self-supervised pseudo labeling to achieve class-wise global alignment [1] or rely on local structure extraction that encourages feature consistency among neighborhoods [2]. While impressive progress has been made, both lines of methods have their own drawbacks - the "global" approach is sensitive to noisy labels while the "local" counterpart suffers from source bias. In this paper, we present Divide and Contrast (DaC), a new paradigm for SFUDA that strives to connect the good ends of both worlds while bypassing their limitations. Based on the prediction confidence of the source model, DaC divides the target data into source-like and target-specific samples, where either group of samples is treated with tailored goals under an adaptive contrastive learning framework. Specifically, the source-like samples are utilized for learning global class clustering thanks to their relatively clean labels. The more noisy target-specific data are harnessed at the instance level for learning the intrinsic local structures. We further align the source-like domain with the target-specific samples using a memory bank-based Maximum Mean Discrepancy (MMD) loss to reduce the distribution mismatch. Extensive experiments on VisDA, Office-Home, and the more challenging DomainNet have verified the superior performance of DaC over current state-of-the-art approaches. </pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
 						<a href="http://chenweikai.github.io/publication.html">
 							<img class="dropshadow pull-right" alt="" src="./figures/nips22_hsdf.png" width="150" height="115">
 						</a>
