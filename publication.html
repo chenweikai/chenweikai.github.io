@@ -79,9 +79,37 @@
 					<h1>Publications</h1>
 				</div>
 			</div>	
-				
-					
+
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="https://ieeexplore.ieee.org/document/10373813">
+							<img class="dropshadow pull-right" alt="" src="./figures/sense_tip23.png" width="150" height="120">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://ieeexplore.ieee.org/document/10373813">
+							<strong>SENSE: Self-Evolving Learning for Self-Supervised Monocular Depth Estimation</strong>
+						</a>
+						<br>
+						Guanbin Li, Ricong Huang, Haofeng Li, Zunzhi You, Weikai Chen
+						<br>
+						<em> <b>IEEE Transactions on Image Processing (2023)</b></em>
+						<br>
+						<em>"self-supervised monocular depth estimation"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://ieeexplore.ieee.org/document/10373813">paper</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(sense23);">abstract</a>
+								<pre id="sense23" class="invisible_text">Self-supervised depth estimation methods can achieve competitive performance using only unlabeled monocular videos, but they suffer from the uncertainty of jointly learning depth and pose without any ground truths of both tasks. Supervised framework provides robust and superior performance but is limited by the scope of the labeled data. In this paper, we introduce SENSE, a novel learning paradigm for self-supervised monocular depth estimation that progressively evolves the prediction result using supervised learning, but without requiring labeled data. The key contribution of our approach stems from the novel use of the pseudo labels – the noisy depth estimation from the self-supervised methods. We surprisingly find that a fully supervised depth estimation network trained using the pseudo labels can produce even better results than its “ground truth”. To push the envelope further, we then evolve the self-supervised backbone by replacing its depth estimation branch with that fully supervised network. Based on this idea, we devise a comprehensive training pipeline that alternatively enhances the two key branches (depth and pose estimation) of the self-supervised backbone network. Our proposed approach can effectively ease the difficulty of multi-task training in self-supervised depth estimation. Experimental results have shown that our proposed approach achieves state-of-the-art results on the KITTI dataset.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
 				</div>
+				
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
 						<a href="https://x-zhangyang.github.io/2023_Get3DHuman/">
