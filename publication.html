@@ -80,6 +80,64 @@
 				</div>
 			</div>	
 
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga24_dreamudf.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://chenweikai.github.io/publication.html">
+							<strong>DreamUDF: Generating Unsigned Distance Fields from A Single Image</strong>
+						</a>
+						<br>
+						Yu-Tao Liu, Xuan Gao, Weikai Chen, Jie Yang, Xiaoxu Meng, Bo Yang, Lin Gao
+						<br>
+						<em> <b>SIGGRAPH Asia 2024 (ACM Transactions on Graphics)</b></em>
+						<br>
+						<em>"a 3D generative model that can generate shapes with arbitrary topologies, including open surfaces"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://chenweikai.github.io/publication.html">paper</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(dreamudf);">abstract</a>
+								<pre id="dreamudf" class="invisible_text">Recent advances in diffusion models and neural implicit surfaces have shown promising progress in generating 3D models. However, existing generative frameworks are limited to closed surfaces, failing to cope with a wide range of commonly seen shapes that have open boundaries. In this work, we present DreamUDF, a novel framework for generating high-quality 3D objects with arbitrary topologies from a single image. To address the challenge of generating proper topology given sparse and ambiguous observations, we propose to incorporate both the data priors from a multi-view diffusion model and the geometry priors brought by an unsiged distance field (UDF) reconstructor. In particular, we leverage a joint framework that consists of 1) a generative module that produces a neural radiance field that provides photo-realistic renderings from the arbitrary view; and 2) a reconstructive module that distills the learnable radiance field into surfaces with arbitrary topologies. We further introduce a field coupler that bridges the radiance field and UDF under an novel optimization scheme. This allows the two modules to mutually boost each other during training. Extensive experiments and evaluations demonstrate that DreamUDF achieves high-quality reconstruction and robust 3D generation on both closed and open surfaces with arbitrary topologies, compared to the previous works.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="https://chenweikai.github.io/publication.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga24_garverse_lod.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://chenweikai.github.io/publication.html">
+							<strong>GarVerseLOD: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details</strong>
+						</a>
+						<br>
+						Zhongjin Luo, Haolin Liu, Chenghong Li, Wanghao Du, Zirong Jin, Yinyu Nie, Weikai Chen, Xiaoguang Han
+						<br>
+						<em> <b>SIGGRAPH Asia 2024 (ACM Transactions on Graphics)</b></em>
+						<br>
+						<em>"first 3D garment dataset with levels of details for enhancing generalizability"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://chenweikai.github.io/publication.html">paper</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(garverse_lod);">abstract</a>
+								<pre id="garverse_lod" class="invisible_text">Neural implicit functions have brought impressive advances to the state-of-the-art of clothed human digitization from multiple or even single images. However, despite the progress, current arts still have difficulty generalizing to unseen images with complex cloth deformation and body poses. In this work, we present GarVerseLOD, a new dataset and framework that paves the way to achieving unprecedented robustness in high-fidelity 3D garment reconstruction from a single unconstrained image. Inspired by the recent success of large generative models, we believe that one key to addressing the generalization challenge lies in the quantity and quality of 3D garment data. Towards this end, GarVerseLOD collects 6000 high-quality cloth models with fine-grained geometry details manually created by professional artists. In addition to the scale of training data, we observe that having disentangled granularities of geometry can play an important role in boosting the generalization capability and inference accuracy of the learned model. We hence craft GarVerseLOD as a hierarchical dataset with evels of details (LOD), spanning from detail-free stylized shape to pose-blended garment with pixel-aligned details. This allows us to make this highly under-constrained problem tractable by factorizing the inference into easier tasks, each narrowed down with smaller searching space. To ensure GarVerseLOD can generalize well to in-the-wild images, we propose a novel labeling paradigm based on conditional diffusion models to generate extensive paired images for each garment model with high photorealism. We evaluate our method on a massive amount of in-the-wild images. Experimental results demonstrate that GarVerseLOD can generate standalone garment pieces with significantly better quality than prior approaches while being robust against a large variation of pose, illumination, occlusion, and deformation. Both code and dataset will be released.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
+						</ul>
+					</div>
+				</div>
+
 				<div class="row" style="margin-bottom: 1em;">
 					<div class="span2 offset1">
 						<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_OVER-NAV_Elevating_Iterative_Vision-and-Language_Navigation_with_Open-Vocabulary_Detection_and_StructurEd_CVPR_2024_paper.pdf">
@@ -102,7 +160,7 @@
 							<li>
 								<em class="fa fa-bars"></em>
 								<a class="toggle_text_link" onclick="javascript:toggle(over_nav);">abstract</a>
-								<pre id="over_nav" class="invisible_text">Recent advances in Iterative Vision-and-Language Navigation (IVLN) introduce a more meaningful and practical paradigm of VLN by maintaining the agent's memory across tours of scenes. Although the long-term memory aligns better with the persistent nature of the VLN task, it poses more challenges on how to utilize the highly unstructured navigation memory with extremely sparse supervision. Towards this end, we propose OVER-NAV, which aims to go over and beyond the current arts of IVLN techniques. In particular, we propose to incorporate LLMs and open-vocabulary detectors to distill key information and establish correspondence between multi-modal signals. Such a mechanism introduces reliable cross-modal supervision and enables on-the-fly generalization to unseen scenes without the need of extra annotation and re-training. To fully exploit the interpreted navigation data, we further introduce a structured representation, coded Omnigraph, to effectively integrate multi-modal information along the tour. Accompanied with a novel omnigraph fusion mechanism, OVER-NAV is able to extract the most relevant knowledge from omnigraph for a more accurate navigating action. In addition, OVER-NAV seamlessly supports both discrete and continuous environments under a unified framework. We demonstrate the superiority of OVER-NAV in extensive experiments..</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+								<pre id="over_nav" class="invisible_text">Recent advances in Iterative Vision-and-Language Navigation (IVLN) introduce a more meaningful and practical paradigm of VLN by maintaining the agent's memory across tours of scenes. Although the long-term memory aligns better with the persistent nature of the VLN task, it poses more challenges on how to utilize the highly unstructured navigation memory with extremely sparse supervision. Towards this end, we propose OVER-NAV, which aims to go over and beyond the current arts of IVLN techniques. In particular, we propose to incorporate LLMs and open-vocabulary detectors to distill key information and establish correspondence between multi-modal signals. Such a mechanism introduces reliable cross-modal supervision and enables on-the-fly generalization to unseen scenes without the need of extra annotation and re-training. To fully exploit the interpreted navigation data, we further introduce a structured representation, coded Omnigraph, to effectively integrate multi-modal information along the tour. Accompanied with a novel omnigraph fusion mechanism, OVER-NAV is able to extract the most relevant knowledge from omnigraph for a more accurate navigating action. In addition, OVER-NAV seamlessly supports both discrete and continuous environments under a unified framework. We demonstrate the superiority of OVER-NAV in extensive experiments.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
 							</li>
 							<!-- <li><em class="fa fa-file"></em> <a href="./papers/[ECCV18]body supplementary.pdf">suppl.</a></li> -->
 						</ul>
@@ -1088,7 +1146,7 @@
 						<br>
 						Shugo Yamaguchi*, Shunsuke Saito*, Koki Nagano, Yajie Zhao, Weikai Chen, Shigeo Morishima, Hao Li
 						<br>
-						<em><b>SIGGRAPH 2018</b></em>
+						<em><b>SIGGRAPH 2018 (ACM Transactions on Graphics)</b></em>
 						<br>
 						<em>"inference of complete face reflectance maps from a single unconstrained image"</em>
 						<br>
@@ -1209,7 +1267,7 @@
 						<br>
 						Weikai Chen*, Yuexin Ma*, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang
 						<br>
-						<em><b>SIGGRAPH Asia 2017</b></em>
+						<em><b>SIGGRAPH Asia 2017 (ACM Transactions on Graphics)</b></em>
 						<br>
 						<em>"a *magic* way to fabricate curved surfaces flatly"</em>
 						<br>
@@ -1239,7 +1297,7 @@
 						<br>
 						Jonathan Palacios, Lawrence Roy, Prashant Kumar, Chen-Yuan Hsu, Weikai Chen, Chongyang Ma, Li-Yi Wei, Eugene Zhang
 						<br>
-						<em><b>SIGGRAPH Asia 2017</b></em>
+						<em><b>SIGGRAPH Asia 2017 (ACM Transactions on Graphics)</b></em>
 						<br>
 						<em>"the first framework to design and edit 3D tensors"</em>
 						<br>
@@ -1305,7 +1363,7 @@
 						<br>
 						Weikai Chen, Xiaolong Zhang, <a href="https://sites.google.com/site/xinshiqing/">Shiqing Xin</a>, <a href="http://xiayang.weebly.com/">Yang Xia </a>, <a href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre</a> and <a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
 						<br>
-						<em><b>SIGGRAPH 2016</b></em>
+						<em><b>SIGGRAPH 2016 (ACM Transactions on Graphics)</b></em>
 						<br>
 						<em>"how to make example-based 3D jewelry"</em>
 						<br>
