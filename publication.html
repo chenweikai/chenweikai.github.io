@@ -82,6 +82,178 @@
 
 			  <div class="row" style="margin-bottom: 1.5em;">
 					<div class="span2 offset1">
+						<a href="https://arxiv.org/abs/2511.06721">
+							<img class="dropshadow pull-right" alt="" src="./figures/3dv26-avatartex.png" width="150" height="120">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://arxiv.org/abs/2511.06721">
+							<strong>AvatarTex: High-Fidelity Facial Texture Reconstruction from Single-Image Stylized Avatars</strong>
+						</a>
+						<br>
+						Yuda Qiu, Zitong Xiao, Yiwei Zuo, Zisheng Ye, Weikai Chen, Xiaoguang Han
+						<br>
+						<em> <b>3DV 2026</b></em>
+						<br>
+						<em>"generating both stylized and photorealistic facial textures from a single image"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2511.06721">paper</a></li>							
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(avatartex);">abstract</a>
+								<pre id="avatartex" class="invisible_text">We present AvatarTex, a high-fidelity facial texture reconstruction framework capable of generating both stylized and photorealistic textures from a single image. Existing methods struggle with stylized avatars due to the lack of diverse multi-style datasets and challenges in maintaining geometric consistency in non-standard textures. To address these limitations, AvatarTex introduces a novel three-stage diffusion-to-GAN pipeline. Our key insight is that while diffusion models excel at generating diversified textures, they lack explicit UV constraints, whereas GANs provide a well-structured latent space that ensures style and topology consistency. By integrating these strengths, AvatarTex achieves high-quality topology-aligned texture synthesis with both artistic and geometric coherence. Specifically, our three-stage pipeline first completes missing texture regions via diffusion-based inpainting, refines style and structure consistency using GAN-based latent optimization, and enhances fine details through diffusion-based repainting. To address the need for a stylized texture dataset, we introduce TexHub, a high-resolution collection of 20,000 multi-style UV textures with precise UV-aligned layouts. By leveraging TexHub and our structured diffusion-to-GAN pipeline, AvatarTex establishes a new state-of-the-art in multi-style facial texture reconstruction. TexHub will be released upon publication to facilitate future research in this field.</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://johann.wang/Light-SQ/">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga26-lightsq.jpg" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://johann.wang/Light-SQ/">
+							<strong>Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</strong>
+						</a>
+						<br>
+						Yuhan Wang, Weikai Chen, Zhihao Hu, Rui Zhang, Yiqun Yin, Rui Wu, Kanle Luo, Siyu Qian, Yuming Ma, Hao Li, Wenping Wang
+						<br>
+						<em> <b>SIGGRAPH Asia 2025</b></em>
+						<br>
+						<em>"converting AI-generated meshes into compact, editable primitive-based representations"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-home"></em> <a href="https://johann.wang/Light-SQ/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2509.24986">paper</a></li>							
+							<li><em class="fa fa-code"></em> <a href="https://github.com/johannwyh/Light-SQ">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(lightsq);">abstract</a>
+								<pre id="lightsq" class="invisible_text">Recent advancements in image-to-3D generation have made it possible to create a 3D mesh from a single image. However, the resulting meshes are typically over-tessellated, structurally disorganized, and difficult to edit. In this work, we address this issue by a task called structure-aware shape abstraction, which converts such meshes into a compact set of superquadrics for user-generated content (UGC) applications. The key challenges of this task are ensuring low primitive overlap, part-aware alignment, and compactness, all of which are critical for maintaining a clean, editable structure. To this end, we propose Light-SQ, a superquadric-based optimization framework consisting of three algorithmic innovations. First, we introduce SDF carving, which iteratively updates the target SDF to discourage overlapping primitives. Second, we propose a block-regrow-fill strategy guided by structure-aware volumetric decomposition to enable structural partitioning that drives primitive placement. Third, we apply adaptive residual pruning based on SDF update history to suppress over-segmentation and ensure compact results. Light-SQ also supports multiscale fitting for localized refinement to preserve fine geometric details. To evaluate our method, we introduce 3DGen-Prim, a new benchmark that extends 3DGen-Bench with metrics for both reconstruction quality and primitive-level editability. Experiments show that Light-SQ achieves efficient, high-fidelity shape abstraction well-suited for 3D UGC creation.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://arxiv.org/abs/2509.12721">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga26_spgen.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://arxiv.org/abs/2509.12721">
+							<strong>SPGen: Spherical Projection as Consistent and Flexible Representation for Single Image 3D Shape Generation</strong>
+						</a>
+						<br>
+						Junyu Zhang, Weikai Chen, Yang Liu, Jian Wang, Zhengyu Yu, Ziqian Shen, Bo Yang, Wenping Wang, Xiaofei Li
+						<br>
+						<em> <b>SIGGRAPH Asia 2025</b></em>
+						<br>
+						<em>"a novel representation for single-image 3D generation with better consistency and flexibility"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2509.12721">paper</a></li>
+							<li><em class="fa fa-globe"></em> <a href="https://evergreen0929.github.io/projects/spgen.html">project page</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(spgen);">abstract</a>
+								<pre id="spgen" class="invisible_text">Single-image 3D generation has gained significant attention, with leading approaches typically relying on multi-view diffusion priors. However, these methods often suffer from inter-view inconsistencies and struggle to accurately represent complex internal structures. In this paper, we introduce a novel generative model, named SPGen, which encodes the geometry by projecting it onto a bounding sphere and unwrapping the sphere into multi-layer 2D Spherical Projection (SP) representation. SPGen operates entirely in the image domain, enabling it to leverage established 2D diffusion priors (e.g., Stable Diffusion). It offers three key advantages: (1) Consistency: The injective SP mapping inherently eliminates inter-view inconsistencies and ambiguity. (2) Flexibility: Multi-layer SP maps can effectively represent nested internal structures and support direct conversion into both watertight and open 3D surfaces. (3) Efficiency: Operating in the image domain allows for efficient fine-tuning with limited computational resources and achieves faster inference times than existing models. Extensive experiments demonstrate that SPGen significantly outperforms existing baselines in terms of geometric quality and computational efficiency.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://arxiv.org/abs/2512.12309">
+							<img class="dropshadow pull-right" alt="" src="./figures/nips25-guided.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://arxiv.org/abs/2512.12309">
+							<strong>GUIDED: Granular Understanding via Identification, Detection, and Discrimination for Fine-Grained Open-Vocabulary Object Detection</strong>
+						</a>
+						<br>
+						Jichang Li, Zijun Liang, Weikai Chen, Lianli Ma, Guanbin Li
+						<br>
+						<em> <b>NeurIPS 2025</b></em>
+						<br>
+						<em>"decomposition framework for fine-grained open-vocabulary object detection"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2512.12309">paper</a></li>							
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(guided);">abstract</a>
+								<pre id="guided" class="invisible_text">Fine-grained open-vocabulary object detection (FG-OVD) requires detecting novel object categories described by attribute-rich text prompts. Existing open-vocabulary detectors significantly underperform in fine-grained settings due to semantic entanglement of subjects and attributes in pretrained vision-language model embeddings, resulting in attribute over-representation, mislocalization, and semantic drift. We propose GUIDED, a decomposition framework that separates object localization and fine-grained recognition into distinct pathways. GUIDED uses a language model to decompose fine-grained class names into coarse-grained subjects and descriptive attributes, guiding detection solely by subject embeddings to ensure stable localization unaffected by irrelevant attributes. An Attribute Fusion Module incorporates helpful attribute information into detection queries using attention-based mechanisms to mitigate over-representation while maintaining discriminative power. Finally, region-level discrimination compares detected regions against full fine-grained class names using a refined vision-language model with a projection head. GUIDED achieves state-of-the-art results on FG-OVD and 3F-OVD benchmarks, demonstrating the benefits of disentangled modeling and modular optimization.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://arxiv.org/abs/2510.25237">
+							<img class="dropshadow pull-right" alt="" src="./figures/iccv25-deepshield.png" width="150" height="120">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://arxiv.org/abs/2510.25237">
+							<strong>DeepShield: Fortifying Deepfake Video Detection with Local and Global Forgery Analysis</strong>
+						</a>
+						<br>
+						Yuchen Cai, Jichang Li, Zhen Li, Weikai Chen, Ruizhong Lan, Xiangjun Xie, Xiangyu Luo, Guanbin Li
+						<br>
+						<em> <b>ICCV 2025</b></em>
+						<br>
+						<em>"a robust deepfake detection framework with local and global forgery analysis"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2510.25237">paper</a></li>							
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(deepshield);">abstract</a>
+								<pre id="deepshield" class="invisible_text">Deepfake detection remains a critical challenge due to the generalization difficulty in identifying diverse face manipulation techniques. In this paper, we propose DeepShield, a novel detection framework that enhances the CLIP-ViT encoder through two key components: Local Patch Guidance (LPG) and Global Forgery Diversification (GFD). LPG applies spatiotemporal artifact modeling and patch-wise supervision to capture fine-grained inconsistencies that global models often overlook. Meanwhile, GFD introduces domain feature augmentation through domain-bridging and boundary-expanding feature generation to synthesize diverse forgeries, reducing overfitting and improving cross-domain adaptability. DeepShield uses a parameter-efficient ST-Adapter inserted into CLIP-ViT's transformer blocks, incorporating a depth-wise 3D convolution layer to effectively capture temporal information. Extensive experiments demonstrate that DeepShield achieves superior results in cross-dataset and cross-manipulation evaluations, setting new state-of-the-art performance on multiple deepfake detection benchmarks.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
+						<a href="https://github.com/ReaFly/AdaDrive">
+							<img class="dropshadow pull-right" alt="" src="./figures/iccv25-adadrive.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span8">
+						<a href="https://github.com/ReaFly/AdaDrive">
+							<strong>AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving</strong>
+						</a>
+						<br>
+						Rui Zhang, Jiaxu Xie, Wenxiao Zhang, Weikai Chen, Xi Tan, Xiang Wan, Guanbin Li
+						<br>
+						<em> <b>ICCV 2025</b></em>
+						<br>
+						<em>"adaptive LLM integration for efficient language-grounded autonomous driving"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_AdaDrive_Self-Adaptive_Slow-Fast_System_for_Language-Grounded_Autonomous_Driving_ICCV_2025_paper.pdf">paper</a></li>							
+							<li><em class="fa fa-code"></em> <a href="https://github.com/ReaFly/AdaDrive">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(adadrive);">abstract</a>
+								<pre id="adadrive" class="invisible_text">Existing LLM-based driving approaches face a critical trade-off: they either activate LLMs too frequently (causing computational overhead) or use fixed schedules (failing to adapt to dynamic driving conditions). We propose AdaDrive, an adaptively collaborative slow-fast framework that addresses these limitations through two main components: (1) Adaptive Activation (Connector-W) employs a novel adaptive activation loss that dynamically determines when to invoke the LLM based on a comparative learning mechanism, ensuring activation only in complex or critical scenarios; (2) Adaptive Fusion (Connector-H) modulates continuous, scaled LLM influence based on scene complexity and prediction confidence, enabling seamless collaboration with conventional planners instead of rigid binary LLM activation. The system achieves state-of-the-art performance on language-grounded autonomous driving benchmarks in terms of both driving accuracy and computational efficiency, while maintaining real-time performance.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1.5em;">
+					<div class="span2 offset1">
 						<a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_TASTE-Rob_Advancing_Video_Generation_of_Task-Oriented_Hand-Object_Interaction_for_Generalizable_CVPR_2025_paper.pdf">
 							<img class="dropshadow pull-right" alt="" src="./figures/cvpr25_tasterob.png" width="150" height="100">
 						</a>
@@ -1645,7 +1817,7 @@ publisher={The University of Hong Kong (Pokfulam, Hong Kong)}
 					<p class="copy"><small>© 2018 Weikai Chen</small></p>
 				</td>
 				<td style="text-align:center">
-					<p class="copy"><small>Last updated on 10/2018</small></p>
+					<p class="copy"><small>Last updated on 02/2026</small></p>
 				</td>
 				<td style="text-align:right">
 					<a href="http://sitestates.com/" title="Site access statistics">

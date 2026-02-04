@@ -167,6 +167,11 @@
 				<ul>
 					<li>
 						<p>
+							<strong>11/2025</strong>: One paper accepted to 3DV 2026.</strong></a>
+						</p>
+					</li>
+					<li>
+						<p>
 							<strong>09/2025</strong>: One paper accepted to NeurIPS 2025.</strong></a>
 						</p>
 					</li>
@@ -402,6 +407,94 @@
 				<hr style="clear: both;">
 				<h2>Selected Publications (<a href="http://chenweikai.github.io/publication.html">Full List</a>)</h2>
 				<dl>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="https://johann.wang/Light-SQ/">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga26-lightsq.jpg" width="150" height="100">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="https://johann.wang/Light-SQ/">
+							<strong>Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</strong>
+						</a>
+						<br>
+						Yuhan Wang, Weikai Chen, Zhihao Hu, Rui Zhang, Yiqun Yin, Rui Wu, Kanle Luo, Siyu Qian, Yuming Ma, Hao Li, Wenping Wang
+						<br>
+						<em> <b>SIGGRAPH Asia 2025</b></em>
+						<br>
+						<em>"converting AI-generated meshes into compact, editable primitive-based representations"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-home"></em> <a href="https://johann.wang/Light-SQ/">project page</a></li>
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2509.24986">paper</a></li>							
+							<li><em class="fa fa-code"></em> <a href="https://github.com/johannwyh/Light-SQ">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(lightsq);">abstract</a>
+								<pre id="lightsq" class="invisible_text">Recent advancements in image-to-3D generation have made it possible to create a 3D mesh from a single image. However, the resulting meshes are typically over-tessellated, structurally disorganized, and difficult to edit. In this work, we address this issue by a task called structure-aware shape abstraction, which converts such meshes into a compact set of superquadrics for user-generated content (UGC) applications. The key challenges of this task are ensuring low primitive overlap, part-aware alignment, and compactness, all of which are critical for maintaining a clean, editable structure. To this end, we propose Light-SQ, a superquadric-based optimization framework consisting of three algorithmic innovations. First, we introduce SDF carving, which iteratively updates the target SDF to discourage overlapping primitives. Second, we propose a block-regrow-fill strategy guided by structure-aware volumetric decomposition to enable structural partitioning that drives primitive placement. Third, we apply adaptive residual pruning based on SDF update history to suppress over-segmentation and ensure compact results. Light-SQ also supports multiscale fitting for localized refinement to preserve fine geometric details. To evaluate our method, we introduce 3DGen-Prim, a new benchmark that extends 3DGen-Bench with metrics for both reconstruction quality and primitive-level editability. Experiments show that Light-SQ achieves efficient, high-fidelity shape abstraction well-suited for 3D UGC creation.</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="https://evergreen0929.github.io/projects/spgen.html">
+							<img class="dropshadow pull-right" alt="" src="./figures/siga26_spgen.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="https://evergreen0929.github.io/projects/spgen.html">
+							<strong>SPGen: Spherical Projection as Consistent and Flexible Representation for Single Image 3D Shape Generation</strong>
+						</a>
+						<br>
+						Junyu Zhang, Weikai Chen, Yang Liu, Jian Wang, Zhengyu Yu, Ziqian Shen, Bo Yang, Wenping Wang, Xiaofei Li
+						<br>
+						<em> <b>SIGGRAPH Asia 2025</b></em>
+						<br>
+						<em>"a novel representation for single-image 3D generation with better consistency and flexibility"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2509.12721">paper</a></li>
+							<li><em class="fa fa-globe"></em> <a href="https://evergreen0929.github.io/projects/spgen.html">project page</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(spgen);">abstract</a>
+								<pre id="spgen" class="invisible_text">Single-image 3D generation has gained significant attention, with leading approaches typically relying on multi-view diffusion priors. However, these methods often suffer from inter-view inconsistencies and struggle to accurately represent complex internal structures. In this paper, we introduce a novel generative model, named SPGen, which encodes the geometry by projecting it onto a bounding sphere and unwrapping the sphere into multi-layer 2D Spherical Projection (SP) representation. SPGen operates entirely in the image domain, enabling it to leverage established 2D diffusion priors (e.g., Stable Diffusion). It offers three key advantages: (1) Consistency: The injective SP mapping inherently eliminates inter-view inconsistencies and ambiguity. (2) Flexibility: Multi-layer SP maps can effectively represent nested internal structures and support direct conversion into both watertight and open 3D surfaces. (3) Efficiency: Operating in the image domain allows for efficient fine-tuning with limited computational resources and achieves faster inference times than existing models. Extensive experiments demonstrate that SPGen significantly outperforms existing baselines in terms of geometric quality and computational efficiency.</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2" style="margin-bottom: 2em;">
+						<a href="https://github.com/ReaFly/AdaDrive">
+							<img class="dropshadow pull-right" alt="" src="./figures/iccv25-adadrive.png" width="150" height="100">
+						</a>
+					</div>
+					<div class="span6">
+						<a href="https://github.com/ReaFly/AdaDrive">
+							<strong>AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving</strong>
+						</a>
+						<br>
+						Rui Zhang, Jiaxu Xie, Wenxiao Zhang, Weikai Chen, Xi Tan, Xiang Wan, Guanbin Li
+						<br>
+						<em> <b>ICCV 2025</b></em>
+						<br>
+						<em>"adaptive LLM integration for efficient language-grounded autonomous driving"</em>
+						<br>
+						<ul class="inline middot">
+							<li><em class="fa fa-file"></em> <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_AdaDrive_Self-Adaptive_Slow-Fast_System_for_Language-Grounded_Autonomous_Driving_ICCV_2025_paper.pdf">paper</a></li>							
+							<li><em class="fa fa-code"></em> <a href="https://github.com/ReaFly/AdaDrive">code</a></li>
+							<li>
+								<em class="fa fa-bars"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(adadrive);">abstract</a>
+								<pre id="adadrive" class="invisible_text">Existing LLM-based driving approaches face a critical trade-off: they either activate LLMs too frequently (causing computational overhead) or use fixed schedules (failing to adapt to dynamic driving conditions). We propose AdaDrive, an adaptively collaborative slow-fast framework that addresses these limitations through two main components: (1) Adaptive Activation (Connector-W) employs a novel adaptive activation loss that dynamically determines when to invoke the LLM based on a comparative learning mechanism, ensuring activation only in complex or critical scenarios; (2) Adaptive Fusion (Connector-H) modulates continuous, scaled LLM influence based on scene complexity and prediction confidence, enabling seamless collaboration with conventional planners instead of rigid binary LLM activation. The system achieves state-of-the-art performance on language-grounded autonomous driving benchmarks in terms of both driving accuracy and computational efficiency, while maintaining real-time performance.</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="span2" style="margin-bottom: 2em;">
