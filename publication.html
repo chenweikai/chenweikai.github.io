@@ -81,6 +81,151 @@
 			</div>	
 
 			  <div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://jinli998.github.io/cosmo3d_page/">
+						<img class="dropshadow pull-right" alt="" src="./figures/cvpr26-cosmo3d.gif" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://jinli998.github.io/cosmo3d_page/">
+						<strong>CoSMo3D: Open-World Promptable 3D Semantic Part Segmentation through LLM-Guided Canonical Spatial Modeling</strong>
+					</a>
+					<br>
+					Li Jin*, <strong>Weikai Chen</strong>*, Yujie Wang, Yingda Yin, Zeyu Hu, Runze Zhang, Keyang Luo, Shengju Qian, Xin Wang, Xueying Qin
+					<br>
+					<em> <b><font color="#FF0000">CVPR 2026 (Oral Presentation)</font></b></em>
+					<br>
+					<em>"canonical space perception for open-world promptable 3D semantic part segmentation"</em>
+					<br>
+					<ul class="inline middot">
+						<li><em class="fa fa-home"></em> <a href="https://jinli998.github.io/cosmo3d_page/">project page</a></li>
+						<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2603.01205">paper</a></li>
+						<li><em class="fa fa-code"></em> <a href="https://github.com/JinLi998/CoSMo3D">code</a></li>
+						<li>
+							<em class="fa fa-bars"></em>
+							<a class="toggle_text_link" onclick="javascript:toggle(cosmo3d);">abstract</a>
+							<pre id="cosmo3d" class="invisible_text">Open-world promptable 3D semantic segmentation remains brittle as semantics are inferred in the input sensor coordinates. Yet, humans, in contrast, interpret parts via functional roles in a canonical space -- wings extend laterally, handles protrude to the side, and legs support from below. Psychophysical evidence shows that we mentally rotate objects into canonical frames to reveal these roles. To fill this gap, we propose CoSMo3D, which attains canonical space perception by inducing a latent canonical reference frame learned directly from data. By construction, we create a unified canonical dataset through LLM-guided intra- and cross-category alignment, exposing canonical spatial regularities across 200 categories. By induction, we realize canonicality inside the model through a dual-branch architecture with canonical map anchoring and canonical box calibration, collapsing pose variation and symmetry into a stable canonical embedding. This shift from input pose space to canonical embedding yields far more stable and transferable part semantics. Experimental results show that CoSMo3D establishes new state of the art in open-world promptable 3D segmentation.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://arxiv.org/abs/2604.17052">
+						<img class="dropshadow pull-right" alt="" src="./figures/cvpr26_oasis.png" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://arxiv.org/abs/2604.17052">
+						<strong>OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning</strong>
+					</a>
+					<br>
+					Zhijia Liang, Jiaming Li, <strong>Weikai Chen</strong>, Yanhao Zhang, Haonan Lu, Guanbin Li
+					<br>
+					<em> <b>CVPR 2026</b></em>
+					<br>
+					<em>"structured on-demand retrieval for streaming video reasoning with bounded token cost"</em>
+					<br>
+					<ul class="inline middot">
+						<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2604.17052">paper</a></li>
+						<li>
+							<em class="fa fa-bars"></em>
+							<a class="toggle_text_link" onclick="javascript:toggle(oasis);">abstract</a>
+							<pre id="oasis" class="invisible_text">Streaming video reasoning requires models to operate in a setting where history grows without bound while meaningful evidence remains scarce. In such a landscape, relevant signal is like an oasis-small, critical, and easily lost in a desert of redundancy. Enlarging memory only widens the desert; aggressive compression dries up the oasis. The real difficulty lies in discovering where to look, not how much to remember. We therefore introduce OASIS, a novel framework for streaming video reasoning that tackles this challenge through structured, on-demand retrieval. It organizes streaming history into hierarchical events and performs reasoning as controlled refinement-short-context inference first, followed by semantically grounded retrieval only when uncertainty arises. As the retrieval is driven by high-level intent rather than embedding similarity, the retrieved memory is substantially more accurate and less noisy. Additionally, the mechanism is plug-and-play, training-free, and readily attaches to different streaming MLLM backbones. Experiments across multiple benchmarks and backbones show that OASIS achieves strong gains in long-horizon accuracy and compositional reasoning with bounded token cost and low request delay.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://calitex-project.github.io/">
+						<img class="dropshadow pull-right" alt="" src="./figures/cvpr26-calitex.png" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://calitex-project.github.io/">
+						<strong>CaliTex: Geometry-Calibrated Attention for View-Coherent 3D Texture Generation</strong>
+					</a>
+					<br>
+					Chenyu Liu, Hongze Chen, Jingzhi Bao, Lingting Zhu, Runze Zhang, <strong>Weikai Chen</strong>, Zeyu Hu, Yingda Yin, Keyang Luo, Xin Wang
+					<br>
+					<em> <b>CVPR 2026</b></em>
+					<br>
+					<em>"geometry-calibrated attention for seamless and view-consistent 3D texture generation"</em>
+					<br>
+					<ul class="inline middot">
+						<li><em class="fa fa-home"></em> <a href="https://calitex-project.github.io/">project page</a></li>
+						<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2511.21309">paper</a></li>
+						<li>
+							<em class="fa fa-bars"></em>
+							<a class="toggle_text_link" onclick="javascript:toggle(calitex);">abstract</a>
+							<pre id="calitex" class="invisible_text">Despite major advances brought by diffusion-based models, current 3D texture generation systems remain hindered by cross-view inconsistency -- textures that appear convincing from one viewpoint often fail to align across others. We find that this issue arises from attention ambiguity, where unstructured full attention is applied indiscriminately across tokens and modalities, causing geometric confusion and unstable appearance-structure coupling. To address this, we introduce CaliTex, a framework of geometry-calibrated attention that explicitly aligns attention with 3D structure. It introduces two modules: Part-Aligned Attention that enforces spatial alignment across semantically matched parts, and Condition-Routed Attention which routes appearance information through geometry-conditioned pathways to maintain spatial fidelity. Coupled with a two-stage diffusion transformer, CaliTex makes geometric coherence an inherent behavior of the network rather than a byproduct of optimization. Empirically, CaliTex produces seamless and view-consistent textures and outperforms both open-source and commercial baselines.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://arxiv.org/abs/2603.16133">
+						<img class="dropshadow pull-right" alt="" src="./figures/cvpr26-dualprim.png" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://arxiv.org/abs/2603.16133">
+						<strong>DualPrim: Compact 3D Reconstruction with Positive and Negative Primitives</strong>
+					</a>
+					<br>
+					Xiaoxu Meng, Zhongmin Chen, Bo Yang, <strong>Weikai Chen</strong>, Weixiao Liu, Lin Gao
+					<br>
+					<em> <b>CVPR 2026</b></em>
+					<br>
+					<em>"compact and structured 3D reconstruction using additive-subtractive superquadrics"</em>
+					<br>
+					<ul class="inline middot">
+						<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2603.16133">paper</a></li>
+						<li>
+							<em class="fa fa-bars"></em>
+							<a class="toggle_text_link" onclick="javascript:toggle(dualprim);">abstract</a>
+							<pre id="dualprim" class="invisible_text">Neural reconstructions often trade structure for fidelity, yielding dense and unstructured meshes with irregular topology and weak part boundaries that hinder editing, animation, and downstream asset reuse. We present DualPrim, a compact and structured 3D reconstruction framework. Unlike additive-only implicit or primitive methods, DualPrim represents shapes with positive and negative superquadrics: the former builds the bases while the latter carves local volumes through a differentiable operator, enabling topology-aware modeling of holes and concavities. This additive-subtractive design increases the representational power without sacrificing compactness or differentiability. We embed DualPrim in a volumetric differentiable renderer, enabling end-to-end learning from multi-view images and seamless mesh export via closed-form boolean difference. Empirically, DualPrim delivers state-of-the-art accuracy and produces compact, structured, and interpretable outputs that better satisfy downstream needs than additive-only alternatives.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://lumitex-pbr.github.io/">
+						<img class="dropshadow pull-right" alt="" src="./figures/lumitex.png" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://lumitex-pbr.github.io/">
+						<strong>LumiTex: Towards High-Fidelity PBR Texture Generation with Illumination Context</strong>
+					</a>
+					<br>
+					Jingzhi Bao, Hongze Chen, Lingting Zhu, Chenyu Liu, Runze Zhang, Keyang Luo, Zeyu Hu, <strong>Weikai Chen</strong>, Yingda Yin, Xin Wang, Zehong Lin, Jun Zhang, Xiaoguang Han
+					<br>
+					<em> <b>ICLR 2026</b></em>
+					<br>
+					<em>"an end-to-end framework for high-fidelity PBR texture generation with illumination context"</em>
+					<br>
+					<ul class="inline middot">
+						<li><em class="fa fa-home"></em> <a href="https://lumitex-pbr.github.io/">project page</a></li>
+						<li><em class="fa fa-file"></em> <a href="https://arxiv.org/abs/2511.19437">paper</a></li>
+						<li><em class="fa fa-code"></em> <a href="https://github.com/LumiTexPBR/LumiTex">code</a></li>
+						<li>
+							<em class="fa fa-bars"></em>
+							<a class="toggle_text_link" onclick="javascript:toggle(lumitex);">abstract</a>
+							<pre id="lumitex" class="invisible_text">Physically-based rendering (PBR) provides a principled standard for realistic material-lighting interactions in computer graphics. Despite recent advances in generating PBR textures, existing methods fail to address two fundamental challenges: 1) materials decomposition from image prompts under limited illumination cues, and 2) seamless and view-consistent texture completion. To this end, we propose LumiTex, an end-to-end framework that comprises three key components: (1) a multi-branch generation scheme that disentangles albedo and metallic-roughness under shared illumination priors for robust material understanding, (2) a lighting-aware material attention mechanism that injects illumination context into the decoding process for physically grounded generation of albedo, metallic, and roughness maps, and (3) a geometry-guided inpainting module based on a large view synthesis model that enriches texture coverage and ensures seamless, view-consistent UV completion. Extensive experiments demonstrate that LumiTex achieves state-of-the-art performance in texture quality, surpassing both existing open-source and commercial methods.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 1.5em;">
 					<div class="span2 offset1">
 						<a href="https://arxiv.org/abs/2511.06721">
 							<img class="dropshadow pull-right" alt="" src="./figures/3dv26-avatartex.png" width="150" height="120">
@@ -91,7 +236,7 @@
 							<strong>AvatarTex: High-Fidelity Facial Texture Reconstruction from Single-Image Stylized Avatars</strong>
 						</a>
 						<br>
-						Yuda Qiu, Zitong Xiao, Yiwei Zuo, Zisheng Ye, Weikai Chen, Xiaoguang Han
+						Yuda Qiu, Zitong Xiao, Yiwei Zuo, Zisheng Ye, <strong>Weikai Chen</strong>, Xiaoguang Han
 						<br>
 						<em> <b>3DV 2026</b></em>
 						<br>
@@ -108,18 +253,18 @@
 					</div>
 				</div>
 
-				<div class="row" style="margin-bottom: 1.5em;">
-					<div class="span2 offset1">
-						<a href="https://johann.wang/Light-SQ/">
-							<img class="dropshadow pull-right" alt="" src="./figures/siga26-lightsq.jpg" width="150" height="100">
-						</a>
-					</div>
-					<div class="span8">
-						<a href="https://johann.wang/Light-SQ/">
-							<strong>Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</strong>
+			<div class="row" style="margin-bottom: 1.5em;">
+				<div class="span2 offset1">
+					<a href="https://johann.wang/Light-SQ/">
+						<img class="dropshadow pull-right" alt="" src="./figures/siga26-lightsq.jpg" width="150" height="100">
+					</a>
+				</div>
+				<div class="span8">
+					<a href="https://johann.wang/Light-SQ/">
+						<strong>Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</strong>
 						</a>
 						<br>
-						Yuhan Wang, Weikai Chen, Zhihao Hu, Rui Zhang, Yiqun Yin, Rui Wu, Kanle Luo, Siyu Qian, Yuming Ma, Hao Li, Wenping Wang
+						Yuhan Wang, <strong>Weikai Chen</strong><sup>#</sup>, Zhihao Hu, Rui Zhang, Yiqun Yin, Rui Wu, Kanle Luo, Siyu Qian, Yuming Ma, Hao Li, Wenping Wang
 						<br>
 						<em> <b>SIGGRAPH Asia 2025</b></em>
 						<br>
@@ -149,7 +294,7 @@
 							<strong>SPGen: Spherical Projection as Consistent and Flexible Representation for Single Image 3D Shape Generation</strong>
 						</a>
 						<br>
-						Junyu Zhang, Weikai Chen, Yang Liu, Jian Wang, Zhengyu Yu, Ziqian Shen, Bo Yang, Wenping Wang, Xiaofei Li
+						Jingdong Zhang, <strong>Weikai Chen</strong><sup>#</sup>, Yuan Liu, Jionghao Wang, Zhengming Yu, Zhuowen Shen, Bo Yang, Wenping Wang, Xin Li
 						<br>
 						<em> <b>SIGGRAPH Asia 2025</b></em>
 						<br>
@@ -178,7 +323,7 @@
 							<strong>GUIDED: Granular Understanding via Identification, Detection, and Discrimination for Fine-Grained Open-Vocabulary Object Detection</strong>
 						</a>
 						<br>
-						Jichang Li, Zijun Liang, Weikai Chen, Lianli Ma, Guanbin Li
+						Jichang Li, Zijun Liang, <strong>Weikai Chen</strong>, Lianli Ma, Guanbin Li
 						<br>
 						<em> <b>NeurIPS 2025</b></em>
 						<br>
@@ -206,7 +351,7 @@
 							<strong>DeepShield: Fortifying Deepfake Video Detection with Local and Global Forgery Analysis</strong>
 						</a>
 						<br>
-						Yuchen Cai, Jichang Li, Zhen Li, Weikai Chen, Ruizhong Lan, Xiangjun Xie, Xiangyu Luo, Guanbin Li
+						Yuchen Cai, Jichang Li, Zhen Li, <strong>Weikai Chen</strong>, Ruizhong Lan, Xiangjun Xie, Xiangyu Luo, Guanbin Li
 						<br>
 						<em> <b>ICCV 2025</b></em>
 						<br>
@@ -234,7 +379,7 @@
 							<strong>AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving</strong>
 						</a>
 						<br>
-						Rui Zhang, Jiaxu Xie, Wenxiao Zhang, Weikai Chen, Xi Tan, Xiang Wan, Guanbin Li
+						Rui Zhang, Jiaxu Xie, Wenxiao Zhang, <strong>Weikai Chen</strong><sup>#</sup>, Xi Tan, Xiang Wan, Guanbin Li
 						<br>
 						<em> <b>ICCV 2025</b></em>
 						<br>
@@ -263,7 +408,7 @@
 							<strong>TASTE-Rob: Advancing video generation of task-oriented hand-object interaction for generalizable robotic manipulation</strong>
 						</a>
 						<br>
-						Hongxiang Zhao, Xingchen Liu, Mutian Xu, Yiming Hao, Weikai Chen, Xiaoguang Han
+						Hongxiang Zhao, Xingchen Liu, Mutian Xu, Yiming Hao, <strong>Weikai Chen</strong>, Xiaoguang Han
 						<br>
 						<em> <b>CVPR 2025</b></em>
 						<br>
@@ -293,7 +438,7 @@
 							<strong>Towards Long-Horizon Vision-Language Navigation: Platform, Benchmark and Method</strong>
 						</a>
 						<br>
-						Xinshuai Song, Weixing Chen, Yang Liu, Weikai Chen, Guanbin Li
+						Xinshuai Song, Weixing Chen, Yang Liu, <strong>Weikai Chen</strong>, Guanbin Li
 						<br>
 						<em> <b>CVPR 2025</b></em>
 						<br>
@@ -323,7 +468,7 @@
 							<strong>HRDreamer: High-resolution texture generation with multi-scale hierarchical diffusion guidance</strong>
 						</a>
 						<br>
-						Simo Zhu, Biru Yang, Jingwei Huang, Weikai Chen, Bin Wang
+						Simo Zhu, Biru Yang, Jingwei Huang, <strong>Weikai Chen</strong>, Bin Wang
 						<br>
 						<em> <b>Computers & Graphics (presented at CCF CAD/Graphics) 2025</b></em>
 						<br>
@@ -353,7 +498,7 @@
 							<strong>DreamUDF: Generating Unsigned Distance Fields from A Single Image</strong>
 						</a>
 						<br>
-						Yu-Tao Liu, Xuan Gao, Weikai Chen, Jie Yang, Xiaoxu Meng, Bo Yang, Lin Gao
+						Yu-Tao Liu, Xuan Gao, <strong>Weikai Chen</strong>, Jie Yang, Xiaoxu Meng, Bo Yang, Lin Gao
 						<br>
 						<em> <b>SIGGRAPH Asia 2024 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -382,7 +527,7 @@
 							<strong>GarVerseLOD: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details</strong>
 						</a>
 						<br>
-						Zhongjin Luo, Haolin Liu, Chenghong Li, Wanghao Du, Zirong Jin, Yinyu Nie, Weikai Chen, Xiaoguang Han
+						Zhongjin Luo, Haolin Liu, Chenghong Li, Wanghao Du, Zirong Jin, Yinyu Nie, <strong>Weikai Chen</strong>, Xiaoguang Han
 						<br>
 						<em> <b>SIGGRAPH Asia 2024 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -412,7 +557,7 @@
 							<strong>MarvelOVD: Marrying Object Recognition and Vision-Language Models for Robust Open-Vocabulary Object Detection</strong>
 						</a>
 						<br>
-						Kuo Wang, Lechao Cheng, Weikai Chen, Pingping Zhang, Liang Lin, Fan Zhou, Guanbin Li
+						Kuo Wang, Lechao Cheng, <strong>Weikai Chen</strong>, Pingping Zhang, Liang Lin, Fan Zhou, Guanbin Li
 						<br>
 						<em> <b>ECCV 2024</b></em>
 						<br>
@@ -444,7 +589,7 @@
 							<strong>OVER-NAV: Elevating Iterative Vision-and-Language Navigation with Open-Vocabulary Detection and StructurEd Representation</strong>
 						</a>
 						<br>
-						Ganlong Zhao, Guanbin Li, Weikai Chen, Yizhou Yu
+						Ganlong Zhao, Guanbin Li, <strong>Weikai Chen</strong>, Yizhou Yu
 						<br>
 						<em> <b>CVPR 2024</b></em>
 						<br>
@@ -473,7 +618,7 @@
 							<strong>SENSE: Self-Evolving Learning for Self-Supervised Monocular Depth Estimation</strong>
 						</a>
 						<br>
-						Guanbin Li, Ricong Huang, Haofeng Li, Zunzhi You, Weikai Chen
+						Guanbin Li, Ricong Huang, Haofeng Li, Zunzhi You, <strong>Weikai Chen</strong>
 						<br>
 						<em> <b>IEEE Transactions on Image Processing (TIP) 2023</b></em>
 						<br>
@@ -502,7 +647,7 @@
 							<strong>Get3DHuman: Lifting StyleGAN-Human into a 3D Generative Model using Pixel-aligned Reconstruction Priors</strong>
 						</a>
 						<br>
-						Zhangyang Xiong, Di Kang, Derong Jin, Weikai Chen, Linchao Bao, Shuguang Cui, Xiaoguang Han
+						Zhangyang Xiong, Di Kang, Derong Jin, <strong>Weikai Chen</strong>, Linchao Bao, Shuguang Cui, Xiaoguang Han
 						<br>
 						<em> <b>ICCV 2023</b></em>
 						<br>
@@ -533,7 +678,7 @@
 							<strong>RankMatch: Fostering Confidence and Consistency in Learning with Noisy Labels</strong>
 						</a>
 						<br>
-						Ziyi Zhang, Weikai Chen, Chaowei Fang, Zhen Li, Lechao Chen, Liang Lin, Guanbin Li
+						Ziyi Zhang, <strong>Weikai Chen</strong>, Chaowei Fang, Zhen Li, Lechao Chen, Liang Lin, Guanbin Li
 						<br>
 						<em> <b>ICCV 2023</b></em>
 						<br>
@@ -562,7 +707,7 @@
 							<strong>NeUDF: Leaning Neural Unsigned Distance Fields with Volume Rendering</strong>
 						</a>
 						<br>
-						Yu-Tao Liu, Li Wang, Jie Yang, Weikai Chen, Xiaoxu Meng, Bo Yang, Lin Gao
+						Yu-Tao Liu, Li Wang, Jie Yang, <strong>Weikai Chen</strong>, Xiaoxu Meng, Bo Yang, Lin Gao
 						<br>
 						<em> <b>CVPR 2023</b></em>
 						<br>
@@ -593,7 +738,7 @@
 							<strong>NeAT: Learning Neural Implicit Surfaces with Arbitrary Topologies from Multi-view Images</strong>
 						</a>
 						<br>
-						Xiaoxu Meng, Weikai Chen, Bo Yang
+						Xiaoxu Meng, <strong>Weikai Chen</strong>, Bo Yang
 						<br>
 						<em> <b>CVPR 2023</b></em>
 						<br>
@@ -625,7 +770,7 @@
 							<strong>NerVE: Neural Volumetric Edges for Parametric Curve Extraction from Point Cloud</strong>
 						</a>
 						<br>
-						Xiangyu Zhu, Dong Du, Weikai Chen, Zhiyou Zhao, Yinyu Nie, Xiaoguang Han
+						Xiangyu Zhu, Dong Du, <strong>Weikai Chen</strong>, Zhiyou Zhao, Yinyu Nie, Xiaoguang Han
 						<br>
 						<em> <b>CVPR 2023</b></em>
 						<br>
@@ -656,7 +801,7 @@
 							<strong>Divide and Adapt: Active Domain Adaptation via Customized Learning</strong>
 						</a>
 						<br>
-						Duojun Huang, Jichang Li, Weikai Chen, Junshi Huang, Zhenhua Chai, Guanbin Li
+						Duojun Huang, Jichang Li, <strong>Weikai Chen</strong>, Junshi Huang, Zhenhua Chai, Guanbin Li
 						<br>
 						<em> <b>CVPR 2023 (Highlight)</b></em>
 						<br>
@@ -688,7 +833,7 @@
 							<strong>IMPLICITPCA: Implicitly-Proxied Parametric Encoding for Collision-Aware Garment Reconstruction</strong>
 						</a>
 						<br>
-						Lan Chen, Jie Yang, Hongbo Fu, Xiaoxu Meng, Weikai Chen, Bo Yang, Lin Gao
+						Lan Chen, Jie Yang, Hongbo Fu, Xiaoxu Meng, <strong>Weikai Chen</strong>, Bo Yang, Lin Gao
 						<br>
 						<em> <b>CVM 2023</b></em>
 						<br>
@@ -720,7 +865,7 @@
 							<strong>HSDF: Hybrid Sign and Distance Field for Modeling Surfaces with Arbitrary Topologies</strong>
 						</a>
 						<br>
-						Li Wang, Jie Yang, Weikai Chen, Xiaoxu Meng, Bo Yang, Jintao Li, Lin Gao
+						Li Wang, Jie Yang, <strong>Weikai Chen</strong>, Xiaoxu Meng, Bo Yang, Jintao Li, Lin Gao
 						<br>
 						<em> <b>NeurIPS 2022, TVCG 2024</b></em>
 						<br>
@@ -751,7 +896,7 @@
 							<strong>Divide and Contrast: Source-free Domain Adaptation via Adaptive Contrastive Learning</strong>
 						</a>
 						<br>
-						Ziyi Zhang, Weikai Chen, Hui Cheng, Zhen Li, Siyuan Li, Liang Lin, Guanbin Li
+						Ziyi Zhang, <strong>Weikai Chen</strong>, Hui Cheng, Zhen Li, Siyuan Li, Liang Lin, Guanbin Li
 						<br>
 						<em> <b>NeurIPS 2022</b></em>
 						<br>
@@ -782,7 +927,7 @@
 							<strong>3PSDF: Three-Pole Signed Distance Function for Learning Surfaces with Arbitrary Topologies</strong>
 						</a>
 						<br>
-						Weikai Chen, Cheng Lin, Weiyang Li, Bo Yang
+						<strong>Weikai Chen</strong>, Cheng Lin, Weiyang Li, Bo Yang
 						<br>
 						<em> <b>CVPR 2022</b></em>
 						<br>
@@ -814,9 +959,9 @@
 							<strong>Dual Adversarial Adaptation for Cross-Device Real-World Image Super-Resolution</strong>
 						</a>
 						<br>
-						Xiaoqian Xu, Pengxu Wei, Weikai Chen, Mingzhi Mao, Liang Lin, Guanbin Li
+						Xiaoqian Xu, Pengxu Wei, <strong>Weikai Chen</strong>, Mingzhi Mao, Liang Lin, Guanbin Li
 						<br>
-						<em> <b>CVPR 2022 (Oral Presentation)</b></em>
+						<em> <b><font color="#FF0000">CVPR 2022 (Oral Presentation)</font></b></em>
 						<br>
 						<em>"the first work studying cross-device domain adaptation for real-world image super-resolution"</em>
 						<br>
@@ -845,7 +990,7 @@
 							<strong>Exemplar-based Pattern Synthesis with Implicit Periodic Field Network</strong>
 						</a>
 						<br>
-						Haiwei Chen, Jiayi Liu, Weikai Chen, Shichen Liu, Yajie Zhao
+						Haiwei Chen, Jiayi Liu, <strong>Weikai Chen</strong>, Shichen Liu, Yajie Zhao
 						<br>
 						<em> <b>CVPR 2022</b></em>
 						<br>
@@ -876,7 +1021,7 @@
 							<strong>OctField: Hierarchical Implicit Functions for 3D Modeling</strong>
 						</a>
 						<br>
-						Jia-Heng Tang*, Weikai Chen*, Jie Yang, Bo Wang, Songrun Liu, Bo Yang, Lin Gao
+						Jia-Heng Tang*, <strong>Weikai Chen</strong>*, Jie Yang, Bo Wang, Songrun Liu, Bo Yang, Lin Gao
 						<br>
 						<em> <b>NeurIPS 2021</b></em>
 						<br>
@@ -908,7 +1053,7 @@
 							<strong>Trash to Treasure: Harvesting OOD Data with Cross-Modal Matching for Open-Set Semi-Supervised Learning</strong>
 						</a>
 						<br>
-						Junkai Huang, Chaowei Fang, Weikai Chen, Zhenhua Chai, Xiaolin Wei, Pengxu Wei, Liang Lin, Guanbin Li
+						Junkai Huang, Chaowei Fang, <strong>Weikai Chen</strong>, Zhenhua Chai, Xiaolin Wei, Pengxu Wei, Liang Lin, Guanbin Li
 						<br>
 						<em> <b>ICCV 2021</b></em>
 						<br>
@@ -938,7 +1083,7 @@
 							<strong>Deep Optimized Priors for 3D Shape Modeling and Reconstruction</strong>
 						</a>
 						<br>
-						Mingyue Yang, Yuxin Wen, Weikai Chen, Yongwei Chen, Kui Jia
+						Mingyue Yang, Yuxin Wen, <strong>Weikai Chen</strong>, Yongwei Chen, Kui Jia
 						<br>
 						<em> <b>CVPR 2021</b></em>
 						<br>
@@ -970,7 +1115,7 @@
 							<strong>Equivariant Point Network for 3D Point Cloud Analysis</strong>
 						</a>
 						<br>
-						Haiwei Chen, Shichen Liu, Weikai Chen, Hao Li
+						Haiwei Chen, Shichen Liu, <strong>Weikai Chen</strong>, Hao Li
 						<br>
 						<em> <b>CVPR 2021</b></em>
 						<br>
@@ -1001,7 +1146,7 @@
 							<strong>3DCaricShop: A Dataset and A Baseline Method for Single-view 3D Caricature Face Reconstruction</strong>
 						</a>
 						<br>
-						Yuda Qiu, Xiaojie Xu, Linteng Qiu, Yan Pan, Yushuang Wu, Weikai Chen, Xiaoguang Han
+						Yuda Qiu, Xiaojie Xu, Linteng Qiu, Yan Pan, Yushuang Wu, <strong>Weikai Chen</strong>, Xiaoguang Han
 						<br>
 						<em> <b>CVPR 2021</b></em>
 						<br>
@@ -1033,9 +1178,9 @@
 							<strong>Deep Fashion3D: A Dataset and Benchmark for 3D Garment Reconstruction from Single Images</strong>
 						</a>
 						<br>
-						Heming Zhu, Yu Cao, Hang Jin, Weikai Chen, Dong Du, Zhangye Wang, Shuguang Cui, and Xiaoguang Han
+						Heming Zhu, Yu Cao, Hang Jin, <strong>Weikai Chen</strong>, Dong Du, Zhangye Wang, Shuguang Cui, and Xiaoguang Han
 						<br>
-						<em> <b>ECCV 2020 (Oral Presentation)</b></em>
+						<em> <b><font color="#FF0000">ECCV 2020 (Oral Presentation)</font></b></em>
 						<br>
 						<em>"a large scale dataset and benchmark for real 3D garments"</em>
 						<br>
@@ -1064,7 +1209,7 @@
 							<strong>A General Differentiable Mesh Renderer for Image-based 3D Reasoning</strong>
 						</a>
 						<br>
-						Shichen Liu, Tianye Li, Weikai Chen*, and Hao Li
+						Shichen Liu, Tianye Li, <strong>Weikai Chen</strong>*, and Hao Li
 						<br>
 						<em> <b>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020</b></em>
 						<br>
@@ -1095,9 +1240,9 @@
 							<strong>Intuitive, Interactive Beard and Hair Synthesis with Generative Models</strong>
 						</a>
 						<br>
-						Kyle Olszewski, Duygu Ceylan, Jun Xing, Jose I. Echevarria, Zhili Chen, Weikai Chen, Hao Li
+						Kyle Olszewski, Duygu Ceylan, Jun Xing, Jose I. Echevarria, Zhili Chen, <strong>Weikai Chen</strong>, Hao Li
 						<br>
-						<em> <b>CVPR 2020 (Oral Presentation)</b></em>
+						<em> <b><font color="#FF0000">CVPR 2020 (Oral Presentation)</font></b></em>
 						<br>
 						<em>"deep learning powered interactive facial hair editing system"</em>
 						<br>
@@ -1126,7 +1271,7 @@
 							<strong>Organic Open-cell Porous Structure Modeling</strong>
 						</a>
 						<br>
-						Lihao Tian, Lin Lu, Weikai Chen, Yang Xia, Charlie C. L. Wang and Wenping Wang
+						Lihao Tian, Lin Lu, <strong>Weikai Chen</strong>, Yang Xia, Charlie C. L. Wang and Wenping Wang
 						<br>
 						<em> <b>ACM Symposium on Computational Fabrication 2020 </b></em>
 						<br>
@@ -1156,7 +1301,7 @@
 							<strong>Learning to Infer Implicit Surfaces without 3D Supervision</strong>
 						</a>
 						<br>
-						Shichen Liu, Shunsuke Saito, Weikai Chen, Hao Li
+						Shichen Liu, Shunsuke Saito, <strong>Weikai Chen</strong>, Hao Li
 						<br>
 						<em> <b>NeurIPS 2019 </b></em>
 						<br>
@@ -1186,9 +1331,9 @@
 							<strong>Soft Rasterizer: A Differentiable Renderer for  Image-based 3D Reasoning</strong>
 						</a>
 						<br>
-						Shichen Liu, Tianye Li, Weikai Chen, Hao Li
+						Shichen Liu, Tianye Li, <strong>Weikai Chen</strong>, Hao Li
 						<br>
-						<em> <b>ICCV 2019 (Oral Presentation)</b><font color="#FF0000"><strong> - 3 Strong Accepts</strong></font></em>
+						<em> <b><font color="#FF0000">ICCV 2019 (Oral Presentation) — Adopted by <a href="https://pytorch3d.org/">PyTorch3D</a> as the core differentiable rendering algorithm</font></b></em>
 						<br>
 						<em>"a truly differentiable renderer for rasterization-based rendering"</em>
 						<br>
@@ -1218,9 +1363,9 @@
 							<strong>Learning Perspective Undistortion of Portraits</strong>
 						</a>
 						<br>
-						Yajie Zhao*, Zeng Huang*, Tianye Li, Weikai Chen, Chloe LeGendre, Xinglei Ren, Ari Shapiro, and Hao Li 
+						Yajie Zhao*, Zeng Huang*, Tianye Li, <strong>Weikai Chen</strong>, Chloe LeGendre, Xinglei Ren, Ari Shapiro, and Hao Li 
 						<br>
-						<em> <b>ICCV 2019 (Oral Presentation)</b></em>
+						<em> <b><font color="#FF0000">ICCV 2019 (Oral Presentation)</font></b></em>
 						<br>
 						<em>"a method for recifying facial distortions in near-range portraits"</em>
 						<br>
@@ -1248,7 +1393,7 @@
 							<strong>Deep Mesh Reconstruction from Single RGB Images via Topology Modification Networks</strong>
 						</a>
 						<br>
-						Junyi Pan, Xiaoguang Han, Weikai Chen, Jiapeng Tang and Kui Jia 
+						Junyi Pan, Xiaoguang Han, <strong>Weikai Chen</strong>, Jiapeng Tang and Kui Jia 
 						<br>
 						<em> <b>ICCV 2019</b></em>
 						<br>
@@ -1279,7 +1424,7 @@
 							<strong>HairBrush for Immersive Data-Driven Hair Modeling</strong>
 						</a>
 						<br>
-						Jun Xing, Koki Nagano, Weikai Chen, Haotian Xu, Li-Yi Wei, Jingwan Lu, Byungmoon Kim, Yajie Zhao, Hao Li
+						Jun Xing, Koki Nagano, <strong>Weikai Chen</strong>, Haotian Xu, Li-Yi Wei, Jingwan Lu, Byungmoon Kim, Yajie Zhao, Hao Li
 						<br>
 						<em> <b>UIST 2019</b></em>
 						<br>
@@ -1309,9 +1454,9 @@
 							<strong>SiCloPe: Silhouette-Based Clothed People</strong>
 						</a>
 						<br>
-						Ryota Natsume, Shunsuke Saito, Zeng Huang, Weikai Chen, Chongyang Ma, Hao Li, Shigeo Morishima
+						Ryota Natsume, Shunsuke Saito, Zeng Huang, <strong>Weikai Chen</strong>, Chongyang Ma, Hao Li, Shigeo Morishima
 						<br>
-						<em> <b>CVPR 2019 (Oral Presentation)</b><font color="#FF0000"><strong> - CVPR Best Paper Finalists</strong></font></em>
+						<em> <b><font color="#FF0000">CVPR 2019 (Oral Presentation) - Best Paper Finalists</font></b></em>
 						<br>
 						<em>"single-view based clothed human reconstruction"</em>
 						<br>
@@ -1339,7 +1484,7 @@
 							<strong>Mask-off: Synthesizing Face Images in the Presence of Head-mounted Displays</strong>
 						</a>
 						<br>
-						Yajie Zhao, Qingguo Xu, Weikai Chen, Jun Xing, Chao Du, Xinyu Huang, Ruigang Yang
+						Yajie Zhao, Qingguo Xu, <strong>Weikai Chen</strong>, Jun Xing, Chao Du, Xinyu Huang, Ruigang Yang
 						<br>
 						<em> <b>IEEE VR 2019</b></em>
 						<br>
@@ -1377,7 +1522,7 @@
 							<strong>Deep Volumetric Video From Very Sparse Multi-View Performance Capture</strong>
 						</a>
 						<br>
-						Zeng Huang, Tianye Li, Weikai Chen, Yajie Zhao, Jun Xing, Chloe LeGendre, Linjie Luo, Chongyang Ma, Hao Li
+						Zeng Huang, Tianye Li, <strong>Weikai Chen</strong>, Yajie Zhao, Jun Xing, Chloe LeGendre, Linjie Luo, Chongyang Ma, Hao Li
 						<br>
 						<em><b>ECCV 2018</b></em>
 						<br>
@@ -1408,7 +1553,7 @@
 							<strong>HairNet: Single-View Hair Reconstruction using Convolutional Neural Networks</strong>
 						</a>
 						<br>
-						Yi Zhou, Liwen Hu, Jun Xing, Weikai Chen, Han-Wei Kung, Xin Tong, Hao Li
+						Yi Zhou, Liwen Hu, Jun Xing, <strong>Weikai Chen</strong>, Han-Wei Kung, Xin Tong, Hao Li
 						<br>
 						<em><b>ECCV 2018</b></em>
 						<br>
@@ -1439,7 +1584,7 @@
 							<strong>High-Fidelity Facial Reflectance and Geometry Inference From an Unconstrained Image</strong>
 						</a>
 						<br>
-						Shugo Yamaguchi*, Shunsuke Saito*, Koki Nagano, Yajie Zhao, Weikai Chen, Shigeo Morishima, Hao Li
+						Shugo Yamaguchi*, Shunsuke Saito*, Koki Nagano, Yajie Zhao, <strong>Weikai Chen</strong>, Shigeo Morishima, Hao Li
 						<br>
 						<em><b>SIGGRAPH 2018 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -1469,7 +1614,7 @@
 							<strong>Mesoscopic Facial Geometry inference Using Deep Neural Networks</strong>
 						</a>
 						<br>
-						Loc  Huynh, Weikai Chen, Shunsuke Saito, Jun Xing, Koki Nagano, Andrew Jones, Hao Li, Paul Debevec
+						Loc  Huynh, <strong>Weikai Chen</strong>, Shunsuke Saito, Jun Xing, Koki Nagano, Andrew Jones, Hao Li, Paul Debevec
 						<br>
 						<em><b>CVPR 2018 (Spotlight Presentation)</b></em>
 						<br>
@@ -1497,7 +1642,7 @@
 							<strong>Identity Preserving Face Completion for Large Ocular Region Occlusion</strong>
 						</a>
 						<br>
-						Yajie Zhao, Weikai Chen, Jun Xing, Xiaoming Li, Zach Bessinger, Fuchang Liu, Wangmeng Zuo, Ruigang Yang
+						Yajie Zhao, <strong>Weikai Chen</strong>, Jun Xing, Xiaoming Li, Zach Bessinger, Fuchang Liu, Wangmeng Zuo, Ruigang Yang
 						<br>
 						<em><b>BMVC 2018</b></em>
 						<br>
@@ -1525,7 +1670,7 @@
 							<strong>Deep RBFNet: Point Cloud Feature Learning using Radial Basis Functions</strong>
 						</a>
 						<br>
-						Weikai Chen, Xiaoguang Han, Guanbin Li, Chao Chen, Jun Xing, Yajie Zhao, Hao Li
+						<strong>Weikai Chen</strong>, Xiaoguang Han, Guanbin Li, Chao Chen, Jun Xing, Yajie Zhao, Hao Li
 						<br>
 						<em><b>arXiv 2018</b></em>
 						<br>
@@ -1560,7 +1705,7 @@
 							<strong>Fabricable Tile Decors</strong>
 						</a>
 						<br>
-						Weikai Chen*, Yuexin Ma*, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang
+						<strong>Weikai Chen</strong>*, Yuexin Ma*, Sylvain Lefebvre, Shiqing Xin, Jonàs Martínez and Wenping Wang
 						<br>
 						<em><b>SIGGRAPH Asia 2017 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -1590,7 +1735,7 @@
 							<strong>Tensor Field Design in Volumes</strong>
 						</a>
 						<br>
-						Jonathan Palacios, Lawrence Roy, Prashant Kumar, Chen-Yuan Hsu, Weikai Chen, Chongyang Ma, Li-Yi Wei, Eugene Zhang
+						Jonathan Palacios, Lawrence Roy, Prashant Kumar, Chen-Yuan Hsu, <strong>Weikai Chen</strong>, Chongyang Ma, Li-Yi Wei, Eugene Zhang
 						<br>
 						<em><b>SIGGRAPH Asia 2017 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -1620,7 +1765,7 @@
 							<strong>By Example Synthesis of Three-Dimensional Porous Materials</strong>
 						</a>
 						<br>
-						Hui Zhang, Weikai Chen, Bin Wang and Wenping Wang
+						Hui Zhang, <strong>Weikai Chen</strong>, Bin Wang and Wenping Wang
 						<br>
 						<em><b>GMP 2017</b></em>
 						<br>
@@ -1656,7 +1801,7 @@
 							<strong>Synthesis of Filigrees for Digital Fabrication</strong>
 						</a>
 						<br>
-						Weikai Chen, Xiaolong Zhang, <a href="https://sites.google.com/site/xinshiqing/">Shiqing Xin</a>, <a href="http://xiayang.weebly.com/">Yang Xia </a>, <a href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre</a> and <a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
+						<strong>Weikai Chen</strong>, Xiaolong Zhang, <a href="https://sites.google.com/site/xinshiqing/">Shiqing Xin</a>, <a href="http://xiayang.weebly.com/">Yang Xia </a>, <a href="http://www.antexel.com/sylefeb/research">Sylvain Lefebvre</a> and <a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
 						<br>
 						<em><b>SIGGRAPH 2016 (ACM Transactions on Graphics)</b></em>
 						<br>
@@ -1687,7 +1832,7 @@
 							<strong>Tensor Field Design in Volumes</strong>
 						</a>
 						<br>
-						Jonathan Palacios, Chongyang Ma, Weikai Chen, Li-Yi Wei and Eugene Zhang
+						Jonathan Palacios, Chongyang Ma, <strong>Weikai Chen</strong>, Li-Yi Wei and Eugene Zhang
 						<br>
 						<em><b>SIGGRAPH Asia 2016</b> Technical Briefs</em>
 						<br>
@@ -1723,7 +1868,7 @@
 							<strong>Second-order differential based matching pursuit method for compressive sensing signal recovery</strong>
 						</a>
 						<br>
-						Weikai Chen, Yunhui Chen
+						<strong>Weikai Chen</strong>, Yunhui Chen
 						<br>
 						<em><b>WCSP 2012</b> </em>
 						<br>
@@ -1746,7 +1891,7 @@
 							<strong>A Compressive Sensing Method for Estimating Doubly-Selective Sparse Channels in OFDM Systems</strong>
 						</a>
 						<br>
-						Kaihua Liu, <b>Weikai Chen (corresponding author)</b>, Yongtao Ma
+						Kaihua Liu, <b><strong>Weikai Chen</strong> (corresponding author)</b>, Yongtao Ma
 						<br>
 						<em>Journal of Tianjin University </em>
 						<br>
@@ -1775,7 +1920,7 @@
 							<strong>Synthesizing patterned surfaces for 3D printing</strong>
 						</a>
 						<br>
-						Weikai Chen
+						<strong>Weikai Chen</strong>
 						<br>
 						<em>The University of Hong Kong, 2017</em>
 						<br>
