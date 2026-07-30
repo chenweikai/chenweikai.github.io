@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------
+# Temporary placeholder / helper scripts (not part of the site)
+# ---------------------------------------------------------------
+# One-off Python scripts used to generate temporary thumbnails
+# under figures/ while paper teaser images are pending. Delete
+# them once real teaser images are in place.
+figures/_gen_*.py
+figures/__pycache__/
+
+# ---------------------------------------------------------------
+# OS / editor junk
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
